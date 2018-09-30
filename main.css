@@ -17,6 +17,7 @@ body {
 }
 #container {
 	padding: .1em 1.5em 1em 1em;
+	width: 700px;
 }
 #container output {
 	clear: both;
@@ -72,11 +73,10 @@ body {
 	color: inherit;
 }
 .ls-files {
-	height: 45px;
 	-webkit-column-width: 100px;
 	-moz-column-width: 100px;
 	-o-column-width: 100px;
-	column-width: 50px;
+	column-width: 100px;
 }
 
 a {
