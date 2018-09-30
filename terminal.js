@@ -11,7 +11,15 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
     var output_ = document.querySelector(outputContainer);
 
     const CMDS_ = [
-        '#', 'clear', 'date', 'echo', 'github', 'help', 'resume', 'uname'
+        '#',
+        'clear',
+        'date',
+        'echo',
+        '<b>github</b>',
+        'help',
+        'ls',
+        '<b>curriculum</b>',
+        'uname'
     ];
 
     var fs_ = null;
@@ -112,8 +120,12 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 					output('You can watch what I\'m doing at: \
 					<a href="https://github.com/yochem">https://github.com/yochem</a>');
 					break;
-				case 'help':
-					output('<div class="ls-files">' + CMDS_.join('<br>') + '</div>');
+                case 'help':
+                    output('Welcome! To see which commands are available, type \
+                    \'ls\' followed by an enter.')
+                    break;
+				case 'ls':
+					output('<div class="ls-files">' + CMDS_.slice(1).join('<br>') + '</div>');
 					break;
 				case 'resume':
 					output('Sorry to put my resume in your face like that!');
@@ -176,7 +188,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 		output: output,
 		ascii: function() {
 			var cmdline = $('.cmdline');
-			cmdline.val('# test');
+			cmdline.val('help (press enter to continue)');
 		}
 	}
 };
