@@ -192,3 +192,4 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 		}
 	}
 };
+
