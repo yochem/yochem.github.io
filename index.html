@@ -4,33 +4,16 @@
     <head>
         <title>Yochem van Rosmalen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body { cursor: default; background-color: #fff; }
-            pre { width: 40%; margin: 30px auto }
-            a:link { color: inherit }
-            a:active { color: inherit }
-            a:visited { color: inherit }
-            a:hover { color: inherit }
-            button:focus { outline: none; }
-            @media screen and (max-width: 600px) {
-                pre { width: 90%; }
-            }
-            button {
-                background: none !important;
-                color: inherit;
-                border: none;
-                padding: 0 !important;
-                font: inherit;
-                cursor: pointer;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" charset="utf-8"></script>
     </head>
 
     <body>
-        <pre>
+        <p>
 Yochem van Rosmalen
 
-Dutch student, currently studying Artificial
+Dutch student, currently in my first
+year towards a bachelor's in Artificial
 Intelligence at the University of Amsterdam.
 
 Connecting
@@ -42,29 +25,6 @@ Connecting
 
 
 <button onclick="toggleDark()">(dark version)</button>
-        </pre>
-        <script>
-            function toggleDark() {
-                var body = document.body;
-                var text = document.querySelector('pre');
-                var button = document.querySelector('button');
-
-                // first time loading js thinks backgroundcolor not set
-                if (!body.style.backgroundColor) {
-                    body.style.backgroundColor = '#fff';
-                }
-
-                // decide which color to switch to
-                if (body.style.backgroundColor === 'rgb(255, 255, 255)') {
-                    body.style.backgroundColor = '#000';
-                    text.style.color = '#fff';
-                    button.innerHTML = '(light version)';
-                } else {
-                    body.style.backgroundColor = '#fff';
-                    text.style.color = '#000';
-                    button.innerHTML = '(dark version)';
-                }
-            }
-        </script>
+</p>
     </body>
 </html>

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    width: 100%;
+    cursor: default;
+    background-color: #fff;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+p {
+    width: max-content;
+    margin: 30px auto;
+    white-space: pre-wrap;
+}
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+    color: inherit
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        width: 90%;
+    }
+}
+
+button {
+    background: none !important;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    cursor: pointer;
+}
