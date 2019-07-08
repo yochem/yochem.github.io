@@ -13,17 +13,20 @@ pre {
     margin: 30px auto;
 }
 
+/* links should have the same color as normal text */
 a:link,
 a:active,
 a:visited,
 a:hover { color: inherit; }
 
+/* don't show the ugly outline around the button */
 button:focus { outline: none; }
 
 @media screen and (max-width: 600px) {
     pre { width: 90%; }
 }
 
+/* button should look like normal text */
 button {
     background: none !important;
     color: inherit;
