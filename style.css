@@ -8,9 +8,10 @@ body {
     font-size: 1.1em;
 }
 
-pre {
+div {
     width: max-content;
     margin: 30px auto;
+    max-width: 400px;
 }
 
 /* links should have the same color as normal text */
@@ -23,7 +24,7 @@ a:hover { color: inherit; }
 button:focus { outline: none; }
 
 @media screen and (max-width: 600px) {
-    pre { width: 90%; }
+    div { width: 90%; }
 }
 
 /* button should look like normal text */
