@@ -1,6 +1,6 @@
 function toggleDark() {
     var body = document.body;
-    var text = document.querySelector('pre');
+    var text = document.querySelector('div');
     var button = document.querySelector('button');
 
     // first time loading js thinks backgroundcolor not set
