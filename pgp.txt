@@ -1,4 +1,3 @@
-<html><body><pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQENBF1W1X0BCACkipEITGOycArzxbq8ufuu97HGzZou3YbEA7tLRtFpPIprtAos
@@ -29,4 +28,3 @@ zsEn2YkKYvBcSdbW/FhS2qfUF7QB86JvMdtS4lIF+0t13uQqddShAnBigNfWKVwn
 6a4otbA3+2TYkcBXAY5eEC6K8Ht+DWGABpfMUR9B5ygpttXD0ql+K/hrsxgAgsk=
 =i+jg
 -----END PGP PUBLIC KEY BLOCK-----
-</pre></body></html>

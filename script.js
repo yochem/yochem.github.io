@@ -12,10 +12,10 @@ function toggleDark() {
     if (body.style.backgroundColor === 'rgb(255, 255, 255)') {
         body.style.backgroundColor = '#000';
         text.style.color = '#fff';
-        button.innerHTML = '(<u>light version</u>)';
+        button.innerHTML = '(<u>Light version</u>)';
     } else {
         body.style.backgroundColor = '#fff';
         text.style.color = '#000';
-        button.innerHTML = '(<u>dark version</u>)';
+        button.innerHTML = '(<u>Dark version</u>)';
     }
 }
