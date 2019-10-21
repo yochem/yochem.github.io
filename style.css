@@ -6,13 +6,17 @@ body {
     overflow: hidden;
     font-family: monospace;
     font-size: 1.1em;
-    line-height: 125%;
+    line-height: 130%;
 }
 
 div {
     width: max-content;
     margin: 30px auto;
     max-width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    div { width: 90%; }
 }
 
 /* links should have the same color as normal text */
@@ -24,10 +28,6 @@ a:hover { color: inherit; }
 /* don't show the ugly outline around the button */
 button:focus { outline: none; }
 
-@media screen and (max-width: 600px) {
-    div { width: 90%; }
-}
-
 /* button should look like normal text */
 button {
     background: none !important;
@@ -36,4 +36,26 @@ button {
     padding: 0 !important;
     font: inherit;
     cursor: pointer;
+    margin-top: 1em;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1em;
+}
+
+ul > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+h1, h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h1 { margin-bottom: 1em; }
+h2 { margin-bottom: 0em; }
