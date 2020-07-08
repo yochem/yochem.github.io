@@ -1,1 +1,0 @@
-curl -Lks https://raw.githubusercontent.com/yochem/dotfiles/master/.local/bin/dotinstall | $(which bash)
