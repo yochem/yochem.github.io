@@ -2,7 +2,6 @@ body {
     margin: 0;
     width: 100%;
     background-color: #fff;
-    overflow: hidden;
     font-family: Courier, monospace;
     line-height: 130%;
 }
@@ -52,7 +51,7 @@ ul > li:before {
 
 h1, h2 {
     font-size: 1em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 h1 { margin-bottom: 1em; }
