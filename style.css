@@ -1,9 +1,10 @@
 body {
     margin: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: white;
     font-family: Courier, monospace;
     line-height: 130%;
+    color: black;
 }
 
 div {
@@ -56,3 +57,10 @@ h1, h2 {
 
 h1 { margin-bottom: 1em; }
 h2 { margin-bottom: 0em; }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1b1b1b;
+        color: white;
+    }
+}
