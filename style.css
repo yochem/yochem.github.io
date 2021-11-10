@@ -1,3 +1,8 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     margin: 0;
     width: 100%;
@@ -7,7 +12,7 @@ body {
     color: black;
 }
 
-div {
+#content {
     width: max-content;
     margin: 30px auto;
     max-width: 400px;
