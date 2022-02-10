@@ -8,8 +8,9 @@ body {
     width: 100%;
     background-color: white;
     font-family: Courier, monospace;
-    line-height: 130%;
+    line-height: 140%;
     color: black;
+    text-underline-offset: 0.3em;
 }
 
 #content {
@@ -26,7 +27,9 @@ body {
 a:link,
 a:active,
 a:visited,
-a:hover { color: inherit; }
+a:hover {
+    color: inherit;
+}
 
 /* don't show the ugly outline around the button */
 button:focus { outline: none; }
@@ -67,5 +70,12 @@ h2 { margin-bottom: 0em; }
     body {
         background-color: #1b1b1b;
         color: white;
+    }
+
+    a:link,
+    a:active,
+    a:visited,
+    a:hover {
+        text-decoration-color: grey;
     }
 }
