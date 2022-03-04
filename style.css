@@ -16,11 +16,11 @@ body {
 #content {
     width: max-content;
     margin: 30px auto;
-    max-width: 400px;
+    max-width: 30em;
 }
 
-@media screen and (max-width: 600px) {
-    div { width: 90%; }
+@media screen and (max-width: 375px) {
+    #content { max-width: 90%; }
 }
 
 /* links should have the same color as normal text */
