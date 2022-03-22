@@ -13,14 +13,14 @@ body {
     text-underline-offset: 0.3em;
 }
 
-#content {
+main {
     width: max-content;
     margin: 30px auto;
     max-width: 30em;
 }
 
 @media screen and (max-width: 375px) {
-    #content { max-width: 90%; }
+    main { max-width: 90%; }
 }
 
 /* links should have the same color as normal text */
