@@ -47,7 +47,6 @@ button {
 
 ul {
     list-style-type: none;
-    margin: 0;
     padding-left: 1em;
 }
 
@@ -64,7 +63,7 @@ h1, h2 {
 }
 
 h1 { margin-bottom: 1em; }
-h2 { margin-bottom: 0em; }
+h2 { margin-bottom: -1em; }
 
 @media (prefers-color-scheme: dark) {
     body {
