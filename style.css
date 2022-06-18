@@ -19,7 +19,7 @@ main {
     max-width: 30em;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
     main { max-width: 90%; }
 }
 
