@@ -1,26 +1,26 @@
 html {
-    height: 100vh;
-    width: 100vw;
+	height: 100vh;
+	width: 100vw;
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    background-color: white;
-    font-family: Courier, monospace;
-    line-height: 140%;
-    color: black;
-    text-underline-offset: 0.3em;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+	font-family: Courier, monospace;
+	line-height: 140%;
+	color: black;
+	text-underline-offset: 0.3em;
 }
 
 main {
-    width: max-content;
-    margin: 30px auto;
-    max-width: 30em;
+	width: max-content;
+	margin: 30px auto;
+	max-width: 30em;
 }
 
 @media screen and (max-width: 440px) {
-    main { max-width: 90%; }
+	main { max-width: 90%; }
 }
 
 /* links should have the same color as normal text */
@@ -28,7 +28,7 @@ a:link,
 a:active,
 a:visited,
 a:hover {
-    color: inherit;
+	color: inherit;
 }
 
 /* don't show the ugly outline around the button */
@@ -36,45 +36,45 @@ button:focus { outline: none; }
 
 /* button should look like normal text */
 button {
-    background: none !important;
-    color: inherit;
-    border: none;
-    padding: 0 !important;
-    font: inherit;
-    cursor: pointer;
-    margin-top: 1em;
+	background: none !important;
+	color: inherit;
+	border: none;
+	padding: 0 !important;
+	font: inherit;
+	cursor: pointer;
+	margin-top: 1em;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 1em;
+	list-style-type: none;
+	padding-left: 1em;
 }
 
 ul > li:before {
-    display: inline-block;
-    content: "-";
-    width: 1em;
-    margin-left: -1em;
+	display: inline-block;
+	content: "-";
+	width: 1em;
+	margin-left: -1em;
 }
 
 h1, h2 {
-    font-size: 1em;
-    font-weight: bold;
+	font-size: 1em;
+	font-weight: bold;
 }
 
 h1 { margin-bottom: 1em; }
 h2 { margin-bottom: -1em; }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1b1b1b;
-        color: white;
-    }
+	body {
+		background-color: #1b1b1b;
+		color: white;
+	}
 
-    a:link,
-    a:active,
-    a:visited,
-    a:hover {
-        text-decoration-color: grey;
-    }
+	a:link,
+	a:active,
+	a:visited,
+	a:hover {
+		text-decoration-color: grey;
+	}
 }

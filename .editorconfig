@@ -1,0 +1,11 @@
+# for github
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[*.css]
+tab_width = 2
+indent_size = 2
