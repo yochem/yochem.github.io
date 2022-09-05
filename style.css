@@ -34,9 +34,9 @@ a:hover {
 }
 
 ul {
-	padding-left: 0;
+	padding-left: 2ch;
 	list-style-type: "- ";
-	list-style-position: inside;
+	list-style-position: outside;
 }
 
 ul, p, h1 {
