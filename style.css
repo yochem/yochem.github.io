@@ -1,5 +1,4 @@
 html {
-	height: 100vh;
 	width: 100vw;
 }
 
@@ -13,6 +12,7 @@ body {
 
 	font-family: Courier, monospace;
 	line-height: 140%;
+	margin-bottom: 10em;
 }
 
 main {
@@ -26,11 +26,20 @@ main {
 }
 
 /* links should have the same color as normal text */
+a,
 a:link,
 a:active,
 a:visited,
 a:hover {
 	color: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 ul {
@@ -50,6 +59,7 @@ h1, h2 {
 }
 
 h2 {
+	margin-top: 2em;
 	margin-bottom: 0;
 }
 
