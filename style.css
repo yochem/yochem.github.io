@@ -67,6 +67,23 @@ ul ul {
 	margin-bottom: 0;
 }
 
+.onelineul {
+	padding-left: 0;
+	height: 1.4rem;
+}
+
+.onelineul li {
+	float: left;
+	list-style-position: inside;
+	list-style-type: disc;
+	margin-right: 1ch;
+}
+
+.onelineul li:first-child {
+	list-style-type: "";
+}
+
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #1b1b1b;
