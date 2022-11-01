@@ -18,7 +18,7 @@ body {
 main {
 	width: max-content;
 	margin: 30px auto;
-	max-width: 30em;
+	max-width: 55ch;
 }
 
 @media screen and (max-width: 440px) {
@@ -76,13 +76,12 @@ ul ul {
 	float: left;
 	list-style-position: inside;
 	list-style-type: disc;
-	margin-right: 1ch;
+	margin-right: 1em;
 }
 
 .onelineul li:first-child {
-	list-style-type: "";
+	list-style-type: none;
 }
-
 
 @media (prefers-color-scheme: dark) {
 	body {
