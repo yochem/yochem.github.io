@@ -22,7 +22,9 @@ main {
 }
 
 @media screen and (max-width: 440px) {
-	main { max-width: 90%; }
+	main {
+		max-width: 90%;
+	}
 }
 
 /* links should have the same color as normal text */
@@ -32,14 +34,12 @@ a:active,
 a:visited,
 a:hover {
 	color: inherit;
+	text-decoration-color: lightgrey;
 }
 
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
+ul, p, h1 {
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
 ul {
@@ -48,9 +48,8 @@ ul {
 	list-style-position: outside;
 }
 
-ul, p, h1 {
-	margin-top: 0;
-	margin-bottom: 1em;
+ul ul {
+	margin-bottom: 0;
 }
 
 h1, h2 {
@@ -61,26 +60,6 @@ h1, h2 {
 h2 {
 	margin-top: 2em;
 	margin-bottom: 0;
-}
-
-ul ul {
-	margin-bottom: 0;
-}
-
-.onelineul {
-	padding-left: 0;
-	height: 1.4rem;
-}
-
-.onelineul li {
-	float: left;
-	list-style-position: inside;
-	list-style-type: disc;
-	margin-right: 1em;
-}
-
-.onelineul li:first-child {
-	list-style-type: none;
 }
 
 @media (prefers-color-scheme: dark) {
