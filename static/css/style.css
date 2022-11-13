@@ -15,14 +15,18 @@ body {
 	margin-bottom: 10em;
 }
 
-main {
+header, main, footer {
 	width: max-content;
 	margin: 30px auto;
 	max-width: 55ch;
 }
 
+main {
+	min-width: 400px;
+}
+
 @media screen and (max-width: 440px) {
-	main {
+	header, main, footer {
 		max-width: 90%;
 	}
 }
@@ -52,14 +56,19 @@ ul ul {
 	margin-bottom: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-size: inherit;
 	font-weight: bold;
 }
 
-h2 {
+h2, h3 {
 	margin-top: 2em;
 	margin-bottom: 0;
+}
+
+#date {
+	color: lightgrey;
+	font-style:	italic;
 }
 
 @media (prefers-color-scheme: dark) {

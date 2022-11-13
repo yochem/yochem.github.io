@@ -5,11 +5,13 @@
 {{- partial "head.html" . -}}
 
 <body>
+	{{- partial "header.html" . -}}
 	<main role="main">
-		<h1>Yochem van Rosmalen</h1>
-
 		{{- block "content" . }}{{- end }}
 	</main>
+	{{ if ne .IsHome true }}
+		{{- partial "footer.html" . -}}
+	{{ end }}
 </body>
 
 </html>
