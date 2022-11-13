@@ -1,0 +1,12 @@
+{{ define "content" }}
+<h1>Posts</h1>
+<ul>
+{{ range .Site.RegularPages }}
+	<li>
+		<a href='{{ .RelPermalink }}'>
+			{{ .Title | markdownify }} ({{ .Date | time.Format "2006/01/02" }})
+		</a>
+	</li>
+{{ end }}
+</ul>
+{{ end }}

@@ -1,0 +1,6 @@
+{{ define "content" }}
+	{{ if .Date }}
+		<p id="date">Posted on {{ .Date | time.Format "02-01-2006" }}.</p>
+	{{ end }}
+	{{ .Content }}
+{{ end }}
