@@ -1,5 +1,5 @@
 ---
-title: "Languages"
+title: "Programming Languages"
 date: 2022-11-13
 draft: true
 toc: false
