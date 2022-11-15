@@ -1,0 +1,63 @@
+---
+title: "University Courses"
+date: 2022-11-15
+draft: true
+---
+
+# University Courses
+
+A list of all university courses I followed. The courses at the UvA all were 6
+EC, while the courses at UU were 7.5 EC.
+
+## MSc. AI @ Utrecht University
+
+### Year 2
+- Knowledge and Data Engineering
+- Algorithms for Decision Support
+- ~~Program Semantics and Verification~~
+
+### Year 1
+- Human Centered Machine Learning
+- Data Intensive Systems
+- Software Architecture
+- Philosophy of AI
+- Pattern Recognition
+- Advanced Machine Learning
+- Machine Learning for Human Vision and Language
+- Methods for Artificial Intelligence Research
+
+## BSc. AI @ University of Amsterdam
+
+### Year 3
+- Thesis BSc AI
+- Programming Languages
+- Language, Speech, and Dialogue Processing
+- Philosophy and AI
+- AI for Society
+- ~~Introduction to Quantum Computing~~
+- Search Engines
+- Complexity: Can It be Simplified
+
+### Year 2
+- Second Year's Project BSc AI
+- Computer Vision
+- Cognitive modelling
+- Natural Language Models and Interfaces
+- Data structures and Algorithms
+- Machine Learning and Decision Making
+- Machine Learning
+- Computational Logic
+- Probability Theory and Statistics
+- Computer Systems
+
+### Year 1
+- Data analysis and Visualisation
+- Language Theory and Language Processing
+- Calculus and Optimization
+- Linear Algebra
+- Cognitive Psychology
+- Web Technologies for AI
+- Introduction into Logic
+- Introduction into Programming
+- Problem Solving and Search
+- Introduction Artificial Intelligence

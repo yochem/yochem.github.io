@@ -1,3 +1,7 @@
 baseURL = 'localhost:1313'
 languageCode = 'en-us'
 title = 'Yochem'
+
+[markup.goldmark]
+	[markup.goldmark.extensions]
+		strikethrough = true
