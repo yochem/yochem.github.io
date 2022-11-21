@@ -1,8 +1,7 @@
 ---
 title: "Programming Languages"
 date: 2022-11-13
-draft: true
-toc: false
+draft: false
 ---
 
 # Programming Languages
@@ -19,7 +18,7 @@ learn more stuff.
 - [TypeScript](https://typescriptlang.org)
 
 
-## Learning/Learned
+## Worked with / learning
 
 - [Python](https://python.org)
 - HTML + CSS + JS
@@ -32,7 +31,7 @@ learn more stuff.
 - [PHP](https://php.net)
 
 
-## No more than playing
+## Played with
 
 - [C++](https://cplusplus.com)
 - [Erlang](https://erlang.org)

@@ -16,10 +16,10 @@ enthousiast.
 - [Twitter](https://twitter.com/yoch3m)
 - [LinkedIn](https://linkedin.com/in/yochem)
 
-## Stuff I Do
+## Stuff I Did
 
-- A paper I co-wrote about fairness metrics in AI:
-  [bursting-burden.pdf](https://github.com/yochem/bursting-burden/blob/main/paper/bursting-burden.pdf)
+- An in-proceedings study I did about fairness metrics in AI:
+  [bursting-burden.pdf](https://github.com/yochem/bursting-burden/blob/main/docs/bursting-burden.pdf)
 - Huge controllable 7-segment display in Den Bosch: [gh/cfm](https://github.com/yochem/cfm)
 - Some small websites I made:
 	- [jorddijkstra.github.io](https://jorddijkstra.github.io/home.html)
