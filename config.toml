@@ -1,0 +1,7 @@
+baseURL = 'https://yochem.nl'
+languageCode = 'en-us'
+title = 'Yochem'
+
+[markup.goldmark]
+	[markup.goldmark.extensions]
+		strikethrough = true

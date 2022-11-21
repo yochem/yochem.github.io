@@ -12,17 +12,20 @@ body {
 
 	font-family: Courier, monospace;
 	line-height: 140%;
-	margin-bottom: 10em;
 }
 
-main {
+header, main, footer {
 	width: max-content;
 	margin: 30px auto;
 	max-width: 55ch;
 }
 
+main {
+	min-width: 400px;
+}
+
 @media screen and (max-width: 440px) {
-	main {
+	header, main, footer {
 		max-width: 90%;
 	}
 }
@@ -35,6 +38,10 @@ a:visited,
 a:hover {
 	color: inherit;
 	text-decoration-color: lightgrey;
+}
+
+h1 a {
+	text-decoration: none;
 }
 
 ul, p, h1 {
@@ -52,7 +59,7 @@ ul ul {
 	margin-bottom: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-size: inherit;
 	font-weight: bold;
 }
@@ -60,6 +67,15 @@ h1, h2 {
 h2 {
 	margin-top: 2em;
 	margin-bottom: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+#date {
+	color: lightgrey;
+	font-style:	italic;
 }
 
 @media (prefers-color-scheme: dark) {

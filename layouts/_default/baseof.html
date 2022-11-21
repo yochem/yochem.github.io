@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+{{- partial "head.html" . -}}
+
+<body>
+	{{- partial "header.html" . -}}
+	<main role="main">
+		{{- block "content" . }}{{- end }}
+	</main>
+	{{ if ne .IsHome true }}
+		{{- partial "footer.html" . -}}
+	{{ end }}
+</body>
+
+</html>
