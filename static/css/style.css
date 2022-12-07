@@ -6,8 +6,8 @@ body {
 	margin: 0;
 	width: 100%;
 
-	background-color: white;
-	color: black;
+	background-color: #1b1b1b;
+	color: white;
 	text-underline-offset: 0.3em;
 
 	font-family: Courier, monospace;
@@ -37,7 +37,7 @@ a:active,
 a:visited,
 a:hover {
 	color: inherit;
-	text-decoration-color: lightgrey;
+	text-decoration-color: grey;
 }
 
 h1 a {
@@ -80,18 +80,4 @@ h1#article-title {
 #date {
 	color: lightgrey;
 	font-style:	italic;
-}
-
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #1b1b1b;
-		color: white;
-	}
-
-	a:link,
-	a:active,
-	a:visited,
-	a:hover {
-		text-decoration-color: grey;
-	}
 }
