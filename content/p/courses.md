@@ -4,8 +4,6 @@ date: 2022-11-15
 draft: false
 ---
 
-# University Courses
-
 A list of all university courses I followed. The courses at the UvA all were 6
 [EC](https://en.wikipedia.org/wiki/European_Credit_Transfer_and_Accumulation_System),
 while the courses at UU were 7.5 EC.

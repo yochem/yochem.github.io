@@ -4,8 +4,6 @@ date: 2022-11-13
 draft: false
 ---
 
-# Programming Languages
-
 A list of the programming languages I am learning or want to learn. Listed in
 order of how comfortable I feel using them. Trying to keep this updated as I
 learn more stuff.
