@@ -73,6 +73,10 @@ h3 {
 	margin: 0;
 }
 
+h1#article-title {
+	margin-bottom: 0;
+}
+
 #date {
 	color: lightgrey;
 	font-style:	italic;

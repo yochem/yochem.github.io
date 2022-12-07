@@ -1,6 +1,7 @@
 {{ define "content" }}
-	{{ if .Date }}
-		<p id="date">Posted on {{ .Date | time.Format "02-01-2006" }}.</p>
-	{{ end }}
+	<h1 id="article-title">{{ .Title }}</h1>
+		{{ with .Date }}
+		<p id="date">Posted on <time datetime="{{ time.Format "2006-01-02" . }}">{{ time.Format "02-01-2006" . }}</time>.</p>
+		{{ end }}
 	{{ .Content }}
 {{ end }}

@@ -1,12 +1,12 @@
 {{ define "content" }}
-{{.Content}}
+{{ .Content }}
 
 <h2>Posts</h2>
 <ul>
 {{ range (where .Site.RegularPages "Section" "p") }}
 	<li>
 		<a href='{{ .RelPermalink }}'>
-			{{ .Title | markdownify }} ({{ .Date | time.Format "2006/01/02" }})
+			{{ .Title | markdownify }} (<time datetime="{{ time.Format "2006-01-02" .Date }}">{{ time.Format "2006/01/02" .Date }}</time>)
 		</a>
 	</li>
 {{ end }}
