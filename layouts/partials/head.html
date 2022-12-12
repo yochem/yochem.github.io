@@ -7,4 +7,8 @@
 	{{ $css := resources.Get "css/style.css" | minify }}
 	<link href="{{ $css.RelPermalink }}" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	{{ if .IsHome }}
+	<style>main { max-width: 55ch; }</style>
+	{{ end }}
 </head>

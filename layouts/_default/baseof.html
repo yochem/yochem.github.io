@@ -9,7 +9,7 @@
 	<main role="main">
 		{{- block "content" . }}{{- end }}
 	</main>
-	{{ if ne .IsHome true }}
+	{{ if not .IsHome }}
 		{{- partial "footer.html" . -}}
 	{{ end }}
 </body>
