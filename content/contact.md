@@ -4,7 +4,7 @@ title: Contact me
 
 
 ## Mail
-[hi [@] yochem . nl](mailto:hi@yochem.nl?subject=Hi!)
+[hi [@] yochem [.] nl](mailto:hi@yochem.nl?subject=Hi!)
 
 ## Telegram
 https://t.me/yochem_work
