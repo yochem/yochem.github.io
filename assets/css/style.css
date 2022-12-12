@@ -34,10 +34,13 @@ main {
 a,
 a:link,
 a:active,
-a:visited,
-a:hover {
+a:visited {
 	color: inherit;
 	text-decoration-color: grey;
+}
+
+a:hover {
+	color: lightgrey;
 }
 
 h1 a {
