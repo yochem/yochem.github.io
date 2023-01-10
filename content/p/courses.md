@@ -6,7 +6,19 @@ draft: false
 
 A list of all university courses I followed. The courses at the UvA all were 6
 [EC](https://en.wikipedia.org/wiki/European_Credit_Transfer_and_Accumulation_System),
-while the courses at UU were 7.5 EC.
+while the courses at UU were 7.5 EC. This are the main topics of my academic
+studies:
+- **Logic**: e.g. predicate logic and computational logic.
+- **Maths**: e.g. calculus, Bayesian statistics and linear algebra.
+- **Language**: e.g. language theory and speech and dialogue processing.
+- **Programming**: e.g. web programming, datastructures and algorithms,
+  low-level coding, and numerous programming languages.
+- **ML**: e.g. neural nets in fields like natural language processing, computer
+  vision, and search engines.
+- **Ethics**: e.g. computational debiasing, sensitive data and philosophy of
+  AI.
+
+And here is the full list:
 
 ## MSc. AI @ Utrecht University
 
