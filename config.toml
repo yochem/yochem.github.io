@@ -13,7 +13,7 @@ uglyURLs = true
 		suffixes = ['txt']
 
 [outputs]
-	home = ['HTML', 'MARKDOWN']
+	home = ['HTML', 'MARKDOWN', 'PLAIN']
 	page = ['HTML', 'MARKDOWN', 'PLAIN']
 
 [markup.goldmark]
