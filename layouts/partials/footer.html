@@ -1,4 +1,10 @@
 <footer>
+	<p id="other-formats">
+		[Also available as
+		<a href='{{ (.OutputFormats.Get "PLAIN").Permalink | safeURL -}}'>.txt</a>
+		and
+		<a href='{{ (.OutputFormats.Get "MARKDOWN").Permalink | safeURL -}}'>.md</a>]
+	</p>
 	<nav>
 		<a href="/">Back home</a>
 	</nav>
