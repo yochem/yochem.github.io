@@ -15,8 +15,13 @@ body {
 }
 
 header, main, footer {
+	/* width: max-content; */
 	margin: 30px auto;
 	max-width: 65ch;
+}
+
+header {
+	text-align: center;
 }
 
 main {

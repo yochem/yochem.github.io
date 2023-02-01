@@ -1,4 +1,5 @@
 <footer>
+	{{ if eq .Type "p" }}
 	<p id="other-formats">
 		[Also available as
 		{{ with  .OutputFormats.Get "PLAIN" -}}
@@ -9,6 +10,7 @@
 		<a href='{{ .RelPermalink | safeURL -}}'>.md</a>
 		{{- end -}}]
 	</p>
+	{{ end }}
 	<nav>
 		<a href="/">Back home</a>
 	</nav>

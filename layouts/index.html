@@ -11,4 +11,9 @@
 	</li>
 {{ end }}
 </ul>
+
+{{ with .Site.GetPage "section" "p" }}
+<a href="{{ .RelPermalink }}">See all</a>
+{{ end }}
+
 {{ end }}
