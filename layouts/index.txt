@@ -3,6 +3,6 @@ Yochem van Rosmalen
 {{ .Plain | htmlUnescape }}
 Posts
 
-{{ range (where .Site.RegularPages "Section" "p") -}}
+{{ range (where .Site.RegularPages "Section" "posts") -}}
 - {{ .Title | markdownify }} ({{ time.Format "2006/01/02" .Date }}): {{ .RelPermalink }}
 {{ end }}
