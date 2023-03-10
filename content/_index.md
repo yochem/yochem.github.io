@@ -12,7 +12,7 @@ enthousiast.
 
 - [Github](https://github.com/yochem)
 - [Mail](mailto:hi@yochem.nl?subject=Hi!)
-- [Telegram](https://t.me/yochem_work)
+- [Telegram](https://t.me/yochem_intelligent_computing)
 - [Twitter](https://twitter.com/yoch3m)
 - [LinkedIn](https://linkedin.com/in/yochem)
 
