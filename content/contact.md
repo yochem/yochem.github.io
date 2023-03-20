@@ -9,11 +9,11 @@ title: Contact me
 ## Telegram
 https://t.me/yochem_intelligent_computing
 
+## WhatsApp
+https://wa.me/message/M5VDXBX25TOJN1
+
 ## Twitter
 https://twitter.com/yoch3m
 
 ## LinkedIn
 https://linkedin.com/in/yochem
-
-## Phone number / WhatsApp
-Ask me via one of the links above!
