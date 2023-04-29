@@ -5,17 +5,6 @@ disableKinds = ['taxonomy', 'term']
 minify = true
 uglyURLs = true
 
-[outputFormats]
-	[outputFormats.PLAIN]
-		baseName = 'index'
-		isPlainText = true
-		mediaType = 'text/plain'
-		suffixes = ['txt']
-
-[outputs]
-	home = ['HTML', 'MARKDOWN', 'PLAIN']
-	page = ['HTML', 'MARKDOWN', 'PLAIN']
-
 [markup.goldmark]
 	[markup.goldmark.extensions]
 		strikethrough = true

@@ -1,17 +1,5 @@
 <footer>
-	{{ if eq .Type "posts" }}
-	<p id="other-formats">
-		[Also available as
-		{{ with  .OutputFormats.Get "PLAIN" -}}
-		<a href='{{ .RelPermalink | safeURL -}}'>.txt</a>
-		{{- end }}
-		and
-		{{ with  .OutputFormats.Get "MARKDOWN" -}}
-		<a href='{{ .RelPermalink | safeURL -}}'>.md</a>
-		{{- end -}}]
-	</p>
-	{{ end }}
 	<nav>
-		<a href="/">Back home</a>
+		<a href="#">Top</a> | <a href="/">Home</a>
 	</nav>
 </footer>
