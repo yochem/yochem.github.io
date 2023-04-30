@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'Yochem'
 disableKinds = ['taxonomy', 'term']
 minify = true
-uglyURLs = true
 
 [markup.goldmark]
 	[markup.goldmark.extensions]
