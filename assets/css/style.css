@@ -97,3 +97,10 @@ time {
 	color: lightgrey;
 	font-size: 95%;
 }
+
+@media print {
+	body {
+		background-color: #fff;
+		color: black;
+	}
+}
