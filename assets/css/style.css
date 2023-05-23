@@ -98,9 +98,18 @@ time {
 	font-size: 95%;
 }
 
+code {
+	font: inherit;
+	font-size: 0.9rem;
+}
+
 @media print {
 	body {
 		background-color: #fff;
 		color: black;
 	}
+}
+
+.center {
+	text-align: center;
 }
