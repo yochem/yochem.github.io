@@ -6,17 +6,23 @@ body {
 	margin: 0;
 	width: 100%;
 
-	background-color: #1b1b1b;
-	color: white;
+	color: #1b1b1b;
+	background-color: white;
 	text-underline-offset: 0.3em;
 
 	font-family: Courier, monospace;
 	line-height: 140%;
 }
 
+body.dark {
+	background-color: #1b1b1b;
+	color: white;
+}
+
 header, main, footer {
 	/* width: max-content; */
 	margin: 30px auto;
+	width: 55ch;
 	max-width: 65ch;
 }
 
@@ -53,6 +59,10 @@ a:hover {
 
 h1 a {
 	text-decoration: none;
+}
+
+#darktoggle {
+	text-align: right;
 }
 
 ul, p, h1 {
@@ -112,4 +122,16 @@ code {
 
 .center {
 	text-align: center;
+}
+
+button#darkmode-toggle {
+	display: block;
+	float: right;
+	border-style: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button#darkmode-toggle img {
+	height: 1.7em;
 }
