@@ -22,12 +22,12 @@ function setDarkMode(dark) {
 	const themeColor = document.querySelector("meta[name='theme-color']")
 
 	if (dark) {
-		img.setAttribute('src', 'sun.png');
+		img.setAttribute('src', '/sun.png');
 		body.classList.add('dark');
 
         themeColor.setAttribute("content", '#1b1b1b');
 	} else {
-		img.setAttribute('src', 'moon.png');
+		img.setAttribute('src', '/moon.png');
 		body.classList.remove('dark');
 
         themeColor.setAttribute("content", 'grey');
