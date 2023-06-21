@@ -1,6 +1,6 @@
 (function setupDarkMode() {
 	const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
-	darkModePreference.addEventListener("change", e => e.matches && toggleDarkMode());
+	darkModePreference.addEventListener("change", e => setDarkMode(e.matches));
 
 	const storedDarkMode = localStorage.getItem('dark-mode');
 	if (!!storedDarkMode) {
