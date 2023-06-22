@@ -1,4 +1,6 @@
 <head>
+	{{ $js := resources.Get "js/darkmode.js" | minify }}
+	<script src="{{ $js.RelPermalink }}"></script>
 	<title>{{ .Site.Title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">

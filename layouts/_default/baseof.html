@@ -13,7 +13,4 @@
 		{{- partial "footer.html" . -}}
 	{{ end }}
 </body>
-
-{{ $js := resources.Get "js/darkmode.js" | minify }}
-<script src="{{ $js.RelPermalink }}"></script>
 </html>
