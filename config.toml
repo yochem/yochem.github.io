@@ -2,7 +2,6 @@ baseURL = 'https://yochem.nl'
 languageCode = 'en-us'
 title = 'Yochem'
 disableKinds = ['taxonomy', 'term']
-minify = true
 
 [markup.goldmark.extensions]
 	strikethrough = true

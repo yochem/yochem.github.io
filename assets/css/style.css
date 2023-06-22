@@ -1,8 +1,10 @@
 html {
 	width: 100vw;
+	color: #1b1b1b;
+	background-color: white;
 }
 
-body.dark {
+html.dark {
 	background-color: #1b1b1b;
 	color: white;
 }
@@ -10,11 +12,7 @@ body.dark {
 body {
 	margin: 0;
 	width: 100%;
-
-	color: #1b1b1b;
-	background-color: white;
 	text-underline-offset: 0.3em;
-
 	font-family: Courier, monospace;
 	line-height: 140%;
 }
@@ -54,6 +52,10 @@ a:visited {
 }
 
 a:hover {
+	color: grey;
+}
+
+html.dark a:hover {
 	color: lightgrey;
 }
 
@@ -99,13 +101,12 @@ h1#article-title {
 }
 
 time {
-	color: lightgrey;
+	color: grey;
 	font-style:	italic;
 }
 
-#other-formats {
-	color: lightgrey;
-	font-size: 95%;
+html.dark time {
+	color: lightgrey
 }
 
 code {
@@ -134,4 +135,9 @@ button#darkmode-toggle {
 
 button#darkmode-toggle img {
 	height: 1.7em;
+	content: url('/img/moon.png');
+}
+
+html.dark button#darkmode-toggle img {
+	content: url('/img/sun.png');
 }

@@ -1,11 +1,11 @@
 <head>
-	{{ $js := resources.Get "js/darkmode.js" | minify }}
-	<script src="{{ $js.RelPermalink }}"></script>
 	<title>{{ .Site.Title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<meta name="description" content="Yochem van Rosmalen">
 	<meta name="theme-color" content="grey">
+	{{ $js := resources.Get "js/darkmode.js" | minify }}
+	<script src="{{ $js.RelPermalink }}"></script>
 	{{ $css := resources.Get "css/style.css" | minify }}
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">

@@ -5,7 +5,8 @@
 	const storedDarkMode = localStorage.getItem('dark-mode');
 	if (!!storedDarkMode) {
 		// convert from string to bool
-		setDarkMode(storedDarkMode === 'true');
+		let prefersDarkMode = storedDarkMode === 'true';
+		setDarkMode(prefersDarkMode);
 		return;
 	}
 
@@ -13,23 +14,17 @@
 		setDarkMode(true);
 	}
 
-	localStorage.setItem('dark-mode', darkModePreference.matches);
 })();
 
 function setDarkMode(dark) {
-	const body = document.getElementsByTagName('body')[0];
-	const img = document.getElementById('darkmode-toggle').children[0];
+	const html = document.getElementsByTagName('html')[0];
 	const themeColor = document.querySelector("meta[name='theme-color']")
 
 	if (dark) {
-		img.setAttribute('src', '/sun.png');
-		body.classList.add('dark');
-
+		html.classList.add('dark');
         themeColor.setAttribute("content", '#1b1b1b');
 	} else {
-		img.setAttribute('src', '/moon.png');
-		body.classList.remove('dark');
-
+		html.classList.remove('dark');
         themeColor.setAttribute("content", 'grey');
 
 	}
@@ -38,8 +33,7 @@ function setDarkMode(dark) {
 
 
 function toggleDarkMode() {
-	const body = document.getElementsByTagName('body')[0];
-	const isDarkModeEnabled = body.classList.contains('dark');
-
+	const html = document.getElementsByTagName('html')[0];
+	const isDarkModeEnabled = html.classList.contains('dark');
 	setDarkMode(!isDarkModeEnabled);
 }
