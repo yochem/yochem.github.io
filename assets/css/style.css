@@ -136,6 +136,7 @@ button#darkmode-toggle {
 button#darkmode-toggle img {
 	height: 1.7em;
 	content: url('/img/moon.png');
+	display: block;
 }
 
 html.dark button#darkmode-toggle img {
