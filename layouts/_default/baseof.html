@@ -2,15 +2,48 @@
 
 <html lang="en" dir="ltr">
 
-{{- partial "head.html" . -}}
+<head>
+	<title>{{ .Site.Title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Yochem van Rosmalen">
+	<meta name="theme-color" content="lightgrey">
+	<meta name="theme-color" content="#1b1b1b" media="(prefers-color-scheme: dark)">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@yoch3m" />
+	<meta name="twitter:creator" content="@yoch3m" />
+	<meta name="twitter:title" content="{{ .Site.Title }}" />
+	<meta name="twitter:description" content="Dutch AI student" />
+
+	{{ $css := (resources.Get "css/style.css" | minify).RelPermalink }}
+	<link rel="stylesheet" href="{{ $css }}">
+	{{ $js := resources.Get "js/back-to-top.js" | minify }}
+	<script src="{{ $js.RelPermalink }}" defer></script>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	{{ if .IsHome }}
+	<style>main { width: 55ch; }</style>
+	{{ end }}
+</head>
 
 <body>
-	{{- partial "header.html" . -}}
+	<header>
+		{{ if .IsHome }}
+		<h1>Yochem van Rosmalen</h1>
+		{{ else }}
+		<h1><a href="/">Yochem van Rosmalen</a></h1>
+		{{ end }}
+	</header>
+
 	<main role="main">
-		{{- block "content" . }}{{- end }}
+	{{- block "content" . }}{{- end }}
 	</main>
 	{{ if not .IsHome }}
-		{{- partial "footer.html" . -}}
+	<footer>
+		<nav>
+			<a href="/">Home</a>
+		</nav>
+	</footer>
 	{{ end }}
 </body>
 </html>
