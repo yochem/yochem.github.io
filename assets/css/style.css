@@ -4,9 +4,11 @@ html {
 	background-color: white;
 }
 
-html.dark {
-	background-color: #1b1b1b;
-	color: white;
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #1b1b1b;
+		color: white;
+	}
 }
 
 body {
@@ -55,16 +57,14 @@ a:hover {
 	color: grey;
 }
 
-html.dark a:hover {
-	color: lightgrey;
+@media (prefers-color-scheme: dark) {
+	a:hover {
+		color: lightgrey;
+	}
 }
 
 h1 a {
 	text-decoration: none;
-}
-
-#darktoggle {
-	text-align: right;
 }
 
 ul, p, h1 {
@@ -105,8 +105,10 @@ time {
 	font-style:	italic;
 }
 
-html.dark time {
-	color: lightgrey
+@media (prefers-color-scheme: dark) {
+	time {
+		color: lightgrey
+	}
 }
 
 code {
@@ -119,26 +121,4 @@ code {
 		background-color: #fff;
 		color: black;
 	}
-}
-
-.center {
-	text-align: center;
-}
-
-button#darkmode-toggle {
-	display: block;
-	float: right;
-	border-style: none;
-	background-color: transparent;
-	cursor: pointer;
-}
-
-button#darkmode-toggle img {
-	height: 1.7em;
-	content: url('/img/moon.png');
-	display: block;
-}
-
-html.dark button#darkmode-toggle img {
-	content: url('/img/sun.png');
 }
