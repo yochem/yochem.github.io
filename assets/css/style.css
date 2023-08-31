@@ -114,6 +114,18 @@ time {
 code {
 	font: inherit;
 	font-size: 0.9rem;
+	/* background-color: darkgrey; */
+	color: orange;
+}
+
+p > code::before, p > code::after {
+	content: '`';
+	color: darkgrey;
+}
+
+pre {
+	margin-left: 4ch;
+	background-color: transparent !important;
 }
 
 @media print {
