@@ -14,7 +14,9 @@
 	<meta name="twitter:creator" content="@yoch3m" />
 	<meta name="twitter:title" content="{{ .Site.Title }}" />
 	<meta name="twitter:description" content="Dutch AI student" />
-
+	{{ if .Params.noindex }}
+	<meta name="robots" content="noindex" />
+	{{ end }}
 	{{ $css := (resources.Get "css/style.css" | minify).RelPermalink }}
 	<link rel="stylesheet" href="{{ $css }}">
 	{{ $js := resources.Get "js/back-to-top.js" | minify }}
@@ -41,6 +43,9 @@
 	{{ if not .IsHome }}
 	<footer>
 		<nav>
+			{{ if and (eq .Section "vim") (eq .Kind "page") }}
+			<a href="/vim/">Vim Posts</a> |
+			{{ end }}
 			<a href="/">Home</a>
 		</nav>
 	</footer>

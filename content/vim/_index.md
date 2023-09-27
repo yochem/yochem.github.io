@@ -1,4 +1,4 @@
-# Vim Delights (name subject to change)
+# Vim's Interesting Modifications (VIM)
 
 Hi everyone! I'm Yochem and I like to use a little editor called _Vim_. I don't
 know exactly anymore how and when I heard of Vim, but since the moment I
