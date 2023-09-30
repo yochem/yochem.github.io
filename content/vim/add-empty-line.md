@@ -47,3 +47,13 @@ And here are the snippets for the people that use Lua in Neovim:
 vim.keymap.set("n", "oo", "m`o<Esc>``")
 vim.keymap.set("n", "OO", "m`O<Esc>``")
 ```
+
+Or for the Lua-in-nvim purists:
+```lua
+vim.keymap.set("n", "oo", function ()
+	local cur = vim.api.nvim_win_get_cursor(0)
+	vim.api.nvim_buf_set_mark(0, "`", cur[1], cur[2], {})
+	vim.cmd.norm('o')
+	vim.api.nvim_win_set_cursor(0, vim.api.nvim_buf_get_mark(0, "`"))
+end)
+```
