@@ -26,7 +26,7 @@ nnoremap oo m`o<Esc>``
 ```
 
 The idea is quite simple:
-1. ``m` `` creates a 'previous context mark'
+1. `m'` creates a 'previous context mark'
 2. `o` begins a new line below the cursor and enter insert mode
 3. `<Esc>` enters normal mode
 4. ` `` ` jumps back to previous context mark
@@ -49,7 +49,7 @@ vim.keymap.set("n", "OO", "m`O<Esc>``")
 ```
 
 Or for the Lua-in-nvim purists:
-```lua
+```
 vim.keymap.set("n", "oo", function ()
 	local cur = vim.api.nvim_win_get_cursor(0)
 	vim.api.nvim_buf_set_mark(0, "`", cur[1], cur[2], {})

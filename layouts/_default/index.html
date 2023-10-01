@@ -1,19 +1,12 @@
 {{ define "content" }}
 {{ .Content }}
 
-<h2>Posts</h2>
-<ul>
-{{ range (where .Site.RegularPages "Section" "posts") }}
-	<li>
-		<a href='{{ .RelPermalink }}'>
-			{{ .Title | markdownify }} (<time datetime="{{ time.Format "2006-01-02" .Date }}">{{ time.Format "2006/01/02" .Date }}</time>)
-		</a>
-	</li>
-{{ end }}
-</ul>
+{{ partial "list-section.html" (dict "context" . "section" "posts") }}
 
-{{ with .Site.GetPage "section" "posts" }}
-<a href="{{ .RelPermalink }}">See all</a>
-{{ end }}
+<h2>VIM blog</h2>
+<p>
+I have also started a Vim blog! Check it here: 
+<a href="{{ (.Site.GetPage "vim").RelPermalink }}">VIM</a>.
+</p>
 
 {{ end }}

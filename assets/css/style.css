@@ -116,9 +116,10 @@ code {
 	font-size: 0.9rem;
 	/* background-color: darkgrey; */
 	color: orange;
+	tab-size: 4;
 }
 
-p > code::before, p > code::after {
+:not(pre) > code::before, :not(pre) > code::after {
 	content: '`';
 	color: darkgrey;
 }

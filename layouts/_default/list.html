@@ -1,13 +1,4 @@
 {{ define "content" }}
 {{ .Content }}
-<h2>Posts</h2>
-<ul>
-{{ range .RegularPages }}
-	<li>
-		<a href='{{ .RelPermalink }}'>
-			{{ .Title | markdownify }} (<time datetime="{{ time.Format "2006-01-02" .Date }}">{{ time.Format "2006/01/02" .Date }}</time>)
-		</a>
-	</li>
-{{ end }}
-</ul>
+{{ partial "list-section.html" (dict "context" . "section" .Section) }}
 {{ end }}
