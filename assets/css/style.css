@@ -114,7 +114,6 @@ time {
 code {
 	font: inherit;
 	font-size: 0.9rem;
-	/* background-color: darkgrey; */
 	color: orange;
 	tab-size: 4;
 }
@@ -127,6 +126,10 @@ code {
 pre {
 	margin-left: 4ch;
 	background-color: transparent !important;
+}
+
+#totop {
+	display: none;
 }
 
 @media print {

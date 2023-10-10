@@ -19,8 +19,10 @@
 	{{ end }}
 	{{ $css := (resources.Get "css/style.css" | minify).RelPermalink }}
 	<link rel="stylesheet" href="{{ $css }}">
+	{{ if not .IsHome }}
 	{{ $js := resources.Get "js/back-to-top.js" | minify }}
 	<script src="{{ $js.RelPermalink }}" defer></script>
+	{{ end }}
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 	{{ if .IsHome }}
@@ -29,11 +31,11 @@
 </head>
 
 <body>
-	<header>
+	<header aria-label="website title">
 		{{ if .IsHome }}
 		<h1>Yochem van Rosmalen</h1>
 		{{ else }}
-		<h1><a href="/">Yochem van Rosmalen</a></h1>
+		<h1 aria-label="website title"><a title="Back home" aria-label="homepage" href="/">Yochem van Rosmalen</a></h1>
 		{{ end }}
 	</header>
 
@@ -43,10 +45,11 @@
 	{{ if not .IsHome }}
 	<footer>
 		<nav>
+			<span id="totop"><a title="Scroll to top of page" href="#">Top</a> |</span>
 			{{ if and (eq .Section "vim") (eq .Kind "page") }}
-			<a href="/vim/">Vim Posts</a> |
+			<a aria-label="Vim blog post list" href="/vim/">Vim Posts</a> |
 			{{ end }}
-			<a href="/">Home</a>
+			<a aria-label="Back home" href="/">Home</a>
 		</nav>
 	</footer>
 	{{ end }}
