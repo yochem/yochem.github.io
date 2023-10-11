@@ -2,6 +2,7 @@ html {
 	width: 100vw;
 	color: #1b1b1b;
 	background-color: white;
+	overscroll-behavior: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@ body {
 	text-underline-offset: 0.3em;
 	font-family: Courier, monospace;
 	line-height: 140%;
+	overflow-y: scroll;
 }
 
 header, main, footer {
@@ -26,16 +28,12 @@ header, main, footer {
 	max-width: 65ch;
 }
 
-header {
+header, nav {
 	text-align: center;
 }
 
 main {
 	min-width: 300px;
-}
-
-nav {
-	text-align: center;
 }
 
 @media screen and (max-width: 440px) {
@@ -60,6 +58,7 @@ a:hover {
 @media (prefers-color-scheme: dark) {
 	a:hover {
 		color: lightgrey;
+		text-decoration-color: lightgrey;
 	}
 }
 
@@ -67,7 +66,7 @@ h1 a {
 	text-decoration: none;
 }
 
-ul, p, h1 {
+ol, ul, p {
 	margin-top: 0;
 	margin-bottom: 1em;
 }
@@ -78,26 +77,27 @@ ul {
 	list-style-position: outside;
 }
 
-ul ul {
+ol {
+	padding-left: 3ch;
+	list-style-position: outside;
+}
+
+ul ul, ol ol {
 	margin-bottom: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 	font-size: inherit;
 	font-weight: bold;
+	margin-bottom: 0;
 }
 
 h2 {
 	margin-top: 2em;
-	margin-bottom: 0;
 }
 
 h3 {
 	margin: 0;
-}
-
-h1#article-title {
-	margin-bottom: 0;
 }
 
 time {
@@ -137,7 +137,11 @@ pre {
 
 @media print {
 	body {
+		font-size: 10pt;
 		background-color: #fff;
 		color: black;
+	}
+	nav {
+		display: none;
 	}
 }

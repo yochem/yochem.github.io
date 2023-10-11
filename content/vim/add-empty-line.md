@@ -7,7 +7,7 @@ draft: false
 I like having empty lines in my code. It enables the programmer to group parts
 of code that belong together.
 
-Before I used Vim (should we call this B.V.?), I would smash the enter button
+Before I used Vim, I would smash the enter button
 to add an empty line below, and then use the arrows to get back to the right
 spot on the original line. In my first weeks of using Vim, I did the same.
 Okay, I used `o` to bring me to the line below in insert. But then I had to go

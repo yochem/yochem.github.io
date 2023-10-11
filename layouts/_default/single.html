@@ -1,7 +1,7 @@
 {{ define "content" }}
-	<h1 id="article-title">{{ .Title }}</h1>
+	<h1 aria-label="article title" id="article-title">{{ .Title }}</h1>
 		{{ with .Date }}
-		<p aria-label="released on">
+		<p aria-label="published on">
 			<time datetime="{{ time.Format "2006-01-02" . }}">
 				{{ time.Format "02-01-2006" . }}
 			</time>
