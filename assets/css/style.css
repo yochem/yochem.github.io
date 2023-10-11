@@ -2,7 +2,6 @@ html {
 	width: 100vw;
 	color: #1b1b1b;
 	background-color: white;
-	overscroll-behavior: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +17,6 @@ body {
 	text-underline-offset: 0.3em;
 	font-family: Courier, monospace;
 	line-height: 140%;
-	overflow-y: scroll;
 }
 
 header, main, footer {
