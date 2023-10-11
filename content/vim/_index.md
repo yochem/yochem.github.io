@@ -1,3 +1,6 @@
+---
+title: Vim Blog
+---
 # Vim's Interesting Modifications (VIM)
 
 Hi everyone! I'm Yochem and I like to use a little editor called _Vim_. I don't

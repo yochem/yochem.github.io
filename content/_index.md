@@ -5,7 +5,7 @@ master in artificial intelligence at [Utrecht University](https://uu.nl).
 
 I like programming, especially in Python, C, and Lua. I also really like
 software that is lightweight and does one thing very well. Big
-([Neo](https://github.com/neovim/neovim))[Vim](https://en.wikipedia.org/wiki/Vim_(text_editor))
+([Neo](https://github.com/neovim/neovim))[Vim](https://en.wikipedia.org/wiki/Vim_(text_editor) "Vim on Wikipedia")
 and UNIX enthusiast.
 
 ## Connecting
