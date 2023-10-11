@@ -116,6 +116,9 @@ code {
 	font-size: 0.9rem;
 	color: #98c379;
 	tab-size: 4;
+	max-width: 73vw;
+	display: inline-flex;
+	overflow-x: scroll;
 }
 
 :not(pre) > code::before, :not(pre) > code::after {
