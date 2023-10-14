@@ -22,7 +22,6 @@ body {
 header, main, footer {
 	/* width: max-content; */
 	margin: 30px auto;
-	width: 55ch;
 	max-width: 65ch;
 }
 
