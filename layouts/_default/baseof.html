@@ -17,25 +17,20 @@
 	{{- if .Params.noindex -}}
 	<meta name="robots" content="noindex" />
 	{{- end -}}
-	{{ $css := (resources.Get "css/style.css" | minify).RelPermalink }}
-	<link rel="stylesheet" href="{{ $css }}">
-	{{ if not .IsHome -}}
-	{{- $js := resources.Get "js/back-to-top.js" | minify -}}
-	<script src="{{ $js.RelPermalink }}" defer></script>
-	{{- end -}}
+	<link rel="stylesheet" href="{{ (resources.Get "css/style.css").RelPermalink }}">
+	<script src="{{ (resources.Get "js/back-to-top.js").RelPermalink }}" defer></script>
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	{{ if .IsHome -}}
-	<style>main { width: 55ch; }</style>
-	{{- end }}
 </head>
 
 <body>
 	<header aria-label="website title">
-		{{ if .IsHome -}}
-		<h1 aria-label="website title">Yochem van Rosmalen</h1>
+		<h1 aria-label="website title">
+		{{- if .IsHome -}}
+		Yochem van Rosmalen</h1>
 		{{- else -}}
-		<h1 aria-label="website title"><a title="Back home" aria-label="homepage" href="/">Yochem van Rosmalen</a></h1>
-		{{- end }}
+		<a title="Back home" aria-label="homepage" href="/">Yochem van Rosmalen</a>
+		{{- end -}}
+		</h1>
 	</header>
 
 	<main>

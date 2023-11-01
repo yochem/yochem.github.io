@@ -1,9 +1,9 @@
 ## About
 
-Hi! I'm Yochem. A Dutch student, currently in my second year of the research
-master in artificial intelligence at [Utrecht University](https://uu.nl).
+Hi! I'm Yochem. A Dutch student, currently working on my Master's thesis in
+artificial intelligence at [Utrecht University](https://uu.nl).
 
-I like programming, especially in Python, C, and Lua. I also really like
+I love programming, especially in Python, C, and Lua. I also really like
 software that is lightweight and does one thing very well. Big
 ([Neo](https://github.com/neovim/neovim))[Vim](https://en.wikipedia.org/wiki/Vim_(text_editor) "Vim on Wikipedia")
 and UNIX enthusiast.
