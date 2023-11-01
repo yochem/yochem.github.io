@@ -1,0 +1,10 @@
+{{ define "content" }}
+<script src="{{ (resources.Get "js/ics/ics.deps.min.js").RelPermalink }}" defer></script>
+<script src="{{ (resources.Get "js/ics/ics.min.js").RelPermalink }}" defer></script>
+<script src="{{ (resources.Get "js/event.js").RelPermalink }}" defer></script>
+
+<p>
+	Hi! This page should automatically open the appointment in your calendar. If it
+	does not, <a href="#" onclick="javascript:cal.download(filename)">click here</a>.
+</p>
+{{ end }}
