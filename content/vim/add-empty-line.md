@@ -41,21 +41,17 @@ And now, I can't use Vim without this remap. It's even in my [minimal
 config](https://gist.github.com/yochem/69babc7f634d0ee4bfbeca771e3f9366#file-comfy-vim-L22-L23
 "GitHub Gist with my minimal Vim configuration").
 
-And here are the snippets for the people that use Lua in Neovim:
+And for the NeoVim users that are also lua-config-purists like me:
+```
+map("n", "oo", function()
+	local repeated = vim.fn["repeat"]({ "" }, vim.v.count1)
+	local line = vim.api.nvim_win_get_cursor(0)[1]
+	vim.api.nvim_buf_set_lines(0, line, line, true, repeated)
+end, {})
 
+map("n", "OO", function()
+	local repeated = vim.fn["repeat"]({ "" }, vim.v.count1)
+	local line = vim.api.nvim_win_get_cursor(0)[1]
+	vim.api.nvim_buf_set_lines(0, line - 1, line - 1, true, repeated)
+end, {})
 ```
-vim.keymap.set("n", "oo", "m`o<Esc>``")
-vim.keymap.set("n", "OO", "m`O<Esc>``")
-```
-
-Or for the Lua-in-nvim purists:
-```
-vim.keymap.set("n", "oo", function ()
-	local cur = vim.api.nvim_win_get_cursor(0)
-	vim.api.nvim_buf_set_mark(0, "`", cur[1], cur[2], {})
-	vim.cmd.norm("o")
-	vim.api.nvim_win_set_cursor(0, vim.api.nvim_buf_get_mark(0, "`"))
-end)
-```
-And for the empty line above, copy and paste the above function and do a
-`'<,'>s/"oo\?"/\U&/g` 😉.
