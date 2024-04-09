@@ -18,7 +18,6 @@
 	<meta name="robots" content="noindex" />
 	{{- end -}}
 	<link rel="stylesheet" href="{{ (resources.Get "css/style.css").RelPermalink }}">
-	<script src="{{ (resources.Get "js/back-to-top.js").RelPermalink }}" defer></script>
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
@@ -39,7 +38,11 @@
 	{{ if not .IsHome }}
 	<footer>
 		<nav>
-			<span id="totop"><a title="Scroll to top of page" href="#">Top</a> |</span>
+
+			<span id="totop" hidden><a title="Scroll to top of page" href="#">Top</a> |</span>
+			<script>
+				document.getElementById('totop').hidden = document.getElementsByTagName('body')[0].clientHeight < document.documentElement.clientHeight;
+			</script>
 			{{ if and (eq .Section "vim") (eq .Kind "page") }}
 			<a aria-label="Vim blog post list" href="/vim/">Vim Posts</a> |
 			{{ end }}

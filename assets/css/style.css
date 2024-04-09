@@ -128,10 +128,6 @@ pre {
 	background-color: transparent !important;
 }
 
-#totop {
-	display: none;
-}
-
 @media print {
 	body {
 		font-size: 10pt;
