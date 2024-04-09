@@ -1,7 +1,7 @@
 ---
 title: "Start cleaning your $HOME!"
 date: 2023-10-10
-draft: true
+draft: false
 ---
 
 In this post I introduce the problem of configuration files littering your home
