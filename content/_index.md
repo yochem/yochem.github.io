@@ -10,7 +10,7 @@ and UNIX enthusiast.
 
 ## Connecting
 
-- [Github](https://github.com/yochem)
+- [GitHub](https://github.com/yochem)
 - [Mail](mailto:hi@yochem.nl?subject=Hi!)
 - [Signal](https://signal.me/#eu/hoWuQizIlEpVNQ_HBpTu4a6eJF2O1E1aiz6uvBIoJPV53JCKdDlOwJ3nGN3QLGuM)
 - [Twitter (x.com)](https://twitter.com/yoch3m)
