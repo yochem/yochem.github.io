@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" dir="ltr">
+<html lang="{{ default "en" .Params.Language }}" dir="ltr">
 
 <head>
 	<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
@@ -22,13 +22,11 @@
 </head>
 
 <body>
-	<header aria-label="website title">
+	<header>
 		<h1 aria-label="website title" lang="nl" translate="no">
-		{{- if .IsHome -}}
-		Yochem van Rosmalen</h1>
-		{{- else -}}
-		<a title="Back home" aria-label="homepage" href="/">Yochem van Rosmalen</a>
-		{{- end -}}
+			<a title="Back home" aria-label="homepage" href="/">
+				Yochem van Rosmalen
+			</a>
 		</h1>
 	</header>
 

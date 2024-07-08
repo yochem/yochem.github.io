@@ -1,5 +1,4 @@
 baseURL = 'https://yochem.nl'
-languageCode = 'en-us'
 title = 'Yochem'
 disableKinds = ['taxonomy', 'term']
 
