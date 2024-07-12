@@ -2,6 +2,7 @@
 language: nl
 date: 2024-07-08
 title: Carnaval datum in je online agenda!
+unlisted: true
 ---
 
 Veel kalenderapps, zoals Google Calendar, Apple Calendar en Outlook hebben een

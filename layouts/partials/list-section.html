@@ -1,10 +1,12 @@
 <h2>{{ title .section }}</h2>
 <ul>
 {{ range (where .context.Site.RegularPages "Section" .section) }}
+	{{ if not .Params.Unlisted }}
 	<li>
 		<a href='{{ .RelPermalink }}'>
 			{{ .Title | markdownify }} (<time datetime="{{ time.Format "2006-01-02" .Date }}">{{ time.Format "2006-01-02" .Date }}</time>)
 		</a>
 	</li>
+	{{ end }}
 {{ end }}
 </ul>
