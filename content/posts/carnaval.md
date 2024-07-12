@@ -14,7 +14,8 @@ toe te voegen in elke (ical) agenda app. De instructies voor jouw agenda app
 zijn vast op Google te vinden, en anders kan je altijd [contact](/contact) met
 me opnemen.
 
-Dit is de URL die je nodig hebt: [https://yochem.nl/carnaval.ics](/carnaval.ics).
+Dit is de URL die je nodig hebt:
+[https://yochem.nl/carnaval/calendar.ics](/carnaval/calendar.ics).
 
 Oh ja, P.S., de kalender is wel gericht op Oeteldonk ;)
 
