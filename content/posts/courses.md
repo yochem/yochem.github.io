@@ -6,21 +6,21 @@ draft: false
 
 A list of all university courses I followed. The courses at the UvA all were 6
 [EC](https://en.wikipedia.org/wiki/European_Credit_Transfer_and_Accumulation_System),
-while the courses at UU were 7.5 EC. These are the main topics of my academic
-studies:
-- **Logic**: e.g. predicate logic and computational logic.
-- **Maths**: e.g. calculus, Bayesian statistics and linear algebra.
-- **Language**: e.g. language theory and speech and dialogue processing.
-- **Programming**: e.g. web programming, datastructures and algorithms,
+while the courses at UU were 7.5 EC. The main topics of my academic studies
+were:
+- **Logic**: predicate logic and computational logic.
+- **Maths**: calculus, Bayesian statistics and linear algebra.
+- **Language**: language theory and speech and dialogue processing.
+- **Programming**: web programming, datastructures and algorithms,
   low-level coding, and numerous programming languages.
-- **ML**: e.g. neural nets in fields like natural language processing, computer
+- **ML**: neural nets in fields like natural language processing, computer
   vision, and search engines.
-- **Ethics**: e.g. computational debiasing, sensitive data and philosophy of
+- **Ethics**: computational debiasing, sensitive data and philosophy of
   AI.
 
 And here is the full list:
 
-## MSc. AI @ Utrecht University
+## MSc AI @ Utrecht University
 
 ### Year 2
 - [MSc Thesis Part 2](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&collegejaar=2022&cursus=INFOMAI2)
@@ -40,7 +40,7 @@ And here is the full list:
 - [Machine Learning for Human Vision and Language](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&collegejaar=2021&cursus=INFOMLHVL)
 - [Methods for Artificial Intelligence Research](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&collegejaar=2021&cursus=INFOMAIR)
 
-## BSc. AI @ University of Amsterdam
+## BSc AI @ University of Amsterdam
 
 ### Year 3
 - [Graduation Project BSc AI](https://coursecatalogue.uva.nl/xmlpages/page/2020-2021/zoek-vak/vak/79241)
