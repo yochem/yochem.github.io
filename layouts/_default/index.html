@@ -1,12 +1,3 @@
 {{ define "content" }}
 {{ .Content }}
-
-{{ partial "list-section.html" (dict "context" . "section" "posts") }}
-
-<h2>VIM blog</h2>
-<p>
-I have also started a Vim blog! Check it here: 
-<a title="Vim blog" href="{{ (.Site.GetPage "vim").RelPermalink }}">VIM</a>.
-</p>
-
 {{ end }}

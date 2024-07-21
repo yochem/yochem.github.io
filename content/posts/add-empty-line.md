@@ -1,5 +1,5 @@
 ---
-title: "Add empty lines above or below"
+title: "Vim: Add empty lines above or below"
 date: 2023-08-30
 draft: false
 ---
@@ -7,12 +7,12 @@ draft: false
 I like having empty lines in my code. It enables the programmer to group parts
 of code that belong together.
 
-Before I used Vim, I would smash the enter button
-to add an empty line below, and then use the arrows to get back to the right
-spot on the original line. In my first weeks of using Vim, I did the same.
-Okay, I used `o` to bring me to the line below in insert. But then I had to go
-back to normal mode, press `k` to go one line up, and find the exact location
-again. So my key presses would look like this:
+Before I used Vim, I would smash the enter button to add an empty line below,
+and then use the arrows to get back to the right spot on the original line. In
+my first weeks of using Vim, I did the same. Okay, I used `o` to bring me to
+the line below in insert. But then I had to go back to normal mode, press `k`
+to go one line up, and find the exact location again. So my key presses would
+look like this:
 
 ```
 o<esc>kwwww

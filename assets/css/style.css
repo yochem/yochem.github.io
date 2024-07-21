@@ -19,10 +19,10 @@ body {
 	color: var(--fg-color);
 	background-color: var(--bg-color);
 	margin: 0;
-	width: 100%;
 	text-underline-offset: 0.3em;
 	font-family: Courier, monospace;
-	line-height: 1.4;
+	font-size: 1.05rem;
+	line-height: 1.5;
 }
 
 header, main, footer {
