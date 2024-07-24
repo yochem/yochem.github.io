@@ -2,7 +2,7 @@
 	--bg-color: #eeeeee;
 	--fg-color: #1b1b1b;
 	--code-color: #4a6d31;
-	--hover-color: grey;
+	--detail-color: grey;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,12 +10,11 @@
 		--bg-color: #1b1b1b;
 		--fg-color: #eeeeee;
 		--code-color: #98c379;
-		--hover-color: lightgrey;
+		--detail-color: darkgrey;
 	}
 }
 
 body {
-	width: 100vw;
 	color: var(--fg-color);
 	background-color: var(--bg-color);
 	margin: 0;
@@ -32,10 +31,6 @@ body {
 header, main, footer {
 	margin: 30px auto;
 	max-width: 55ch;
-}
-
-header, nav {
-	text-align: center;
 }
 
 main {
@@ -56,20 +51,33 @@ footer {
 	& nav {
 		display: grid;
 		grid-template-columns: 1fr repeat(20, auto);
+
+		& a {
+
+			&.current {
+				color: var(--detail-color);
+			}
+
+			&:first-child {
+				justify-self: left;
+			}
+
+			&:first-child {
+				justify-self: left;
+			}
+
+			&:not(:first-child) {
+				justify-self: right;
+				padding-left: 10px;
+			}
+
+			&:not(:first-child):not(:last-child) {
+				padding-right: 10px;
+			}
+		}
+
 	}
 
-	& nav a:first-child {
-		justify-self: left;
-	}
-
-	& nav a:not(:first-child) {
-		justify-self: right;
-		padding-left: 10px;
-	}
-
-	& nav a:not(:first-child):not(:last-child) {
-		padding-right: 10px;
-	}
 }
 
 hr {
@@ -83,11 +91,12 @@ a:link,
 a:active,
 a:visited {
 	color: inherit;
-	text-decoration-color: var(--hover-color);
+	text-decoration-color: var(--detail-color);
+	text-decoration-thickness: 4%;
 }
 
 a:hover {
-	color: var(--hover-color);
+	color: var(--detail-color);
 }
 
 h1 a {
@@ -129,7 +138,7 @@ h3 {
 }
 
 time {
-	color: var(--hover-color);
+	color: var(--detail-color);
 	font-style:	italic;
 }
 
@@ -144,7 +153,7 @@ code {
 
 :not(pre) > code::before, :not(pre) > code::after {
 	content: '`';
-	color: var(--hover-color);
+	color: var(--detail-color);
 }
 
 pre {
@@ -169,7 +178,7 @@ blockquote {
 		--bg-color: white;
 		--fg-color: black;
 		--code-color: black;
-		--hover-color: black;
+		--detail-color: black;
 	}
 	body {
 		font-size: 10pt;
