@@ -3,6 +3,8 @@ title: Contact me
 noindex: true
 ---
 
+Here are some link via which you can contact me. Do reach out to me for
+whatever!
 
 ## Mail
 [hi@yochem.nl](mailto:hi@yochem.nl?subject=Hoi!)
