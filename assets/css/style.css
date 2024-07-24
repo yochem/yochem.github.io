@@ -109,6 +109,7 @@ ol, ul, p {
 }
 
 ul {
+	line-height: 1.8;
 	padding-left: 1em;
 	list-style-type: "– ";
 	list-style-position: outside;

@@ -6,7 +6,7 @@ artificial intelligence at [Utrecht University](https://uu.nl).
 - [Mail](mailto:hi@yochem.nl?subject=Hi!)
 - [Twitter (x.com)](https://x.com/yoch3m)
 
-More on the [/contact](/contact/ "Contact page") page.
+More ways to contact me can be found on the [contact](/contact/ "Contact page") page.
 
 ## Blog
-I also occasionally post something on my [/blog](/posts/ "My Blog").
+I occasionally post something on my [blog](/posts/ "My Blog").
