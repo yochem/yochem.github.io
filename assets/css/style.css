@@ -24,6 +24,9 @@ body {
 	font-size: 1.05rem;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 header, main, footer {
@@ -37,6 +40,7 @@ header, nav {
 
 main {
 	min-width: 300px;
+	flex: 1;
 }
 
 @media screen and (max-width: 440px) {
@@ -46,30 +50,32 @@ main {
 }
 
 footer {
-	margin-top: 4em;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 3em;
+	& nav {
+		display: grid;
+		grid-template-columns: 1fr repeat(20, auto);
+	}
+
+	& nav a:first-child {
+		justify-self: left;
+	}
+
+	& nav a:not(:first-child) {
+		justify-self: right;
+		padding-left: 10px;
+	}
+
+	& nav a:not(:first-child):not(:last-child) {
+		padding-right: 10px;
+	}
 }
 
 hr {
 	border-color: var(--bg-color);
 }
 
-nav {
-	display: grid;
-	grid-template-columns: 1fr repeat(20, auto);
-}
-
-nav a:first-child {
-	justify-self: left;
-}
-
-nav a:not(:first-child) {
-	justify-self: right;
-	padding-left: 10px;
-}
-
-nav a:not(:first-child):not(:last-child) {
-	padding-right: 10px;
-}
 
 /* links should have the same color as normal text */
 a,
@@ -111,7 +117,7 @@ ul ul, ol ol {
 h1, h2, h3, h4, h5, h6 {
 	font-size: inherit;
 	font-weight: bold;
-	margin-bottom: 0;
+	margin-bottom: 0.1em;
 }
 
 h2 {
