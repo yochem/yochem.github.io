@@ -45,6 +45,32 @@ main {
 	}
 }
 
+footer {
+	margin-top: 4em;
+}
+
+hr {
+	border-color: var(--bg-color);
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr repeat(20, auto);
+}
+
+nav a:first-child {
+	justify-self: left;
+}
+
+nav a:not(:first-child) {
+	justify-self: right;
+	padding-left: 10px;
+}
+
+nav a:not(:first-child):not(:last-child) {
+	padding-right: 10px;
+}
+
 /* links should have the same color as normal text */
 a,
 a:link,

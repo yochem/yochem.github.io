@@ -33,16 +33,14 @@
 	<main>
 	{{- block "content" . }}{{- end }}
 	</main>
-	{{ if not .IsHome }}
 	<footer>
+		<hr>
 		<nav>
-			<span id="totop" hidden><a title="Scroll to top of page" href="#">Top</a> |</span>
-			<script>
-				document.getElementById('totop').hidden = document.getElementsByTagName('body')[0].clientHeight < document.documentElement.clientHeight;
-			</script>
-			<a aria-label="Back home" href="/">Home</a>
+			<a aria-label="Back home" href="/">/home</a>
+			<a aria-label="Blogs list" href="/posts/">/blog</a>
+			<a aria-label="Now page" href="/now/">/now</a>
+			<a aria-label="Contact page" href="/contact/">/contact</a>
 		</nav>
 	</footer>
-	{{ end }}
 </body>
 </html>
