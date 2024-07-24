@@ -6,7 +6,7 @@
 	<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<meta name="description" content="Yochem van Rosmalen">
+	<meta name="description" content="Yochem van Rosmalen personal website">
 	<meta name="theme-color" content="#1b1b1b" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="lightgrey" media="(prefers-color-scheme: light)">
 	<meta name="twitter:card" content="summary" />
@@ -36,14 +36,10 @@
 	{{ if not .IsHome }}
 	<footer>
 		<nav>
-
 			<span id="totop" hidden><a title="Scroll to top of page" href="#">Top</a> |</span>
 			<script>
 				document.getElementById('totop').hidden = document.getElementsByTagName('body')[0].clientHeight < document.documentElement.clientHeight;
 			</script>
-			{{ if and (eq .Section "vim") (eq .Kind "page") }}
-			<a aria-label="Vim blog post list" href="/vim/">Vim Posts</a> |
-			{{ end }}
 			<a aria-label="Back home" href="/">Home</a>
 		</nav>
 	</footer>

@@ -1,11 +1,13 @@
 {{ define "content" }}
-	<h1 aria-label="article title" id="article-title">{{ .Title }}</h1>
-		{{ with .Date }}
-		<p aria-label="published on">
-			<time datetime="{{ time.Format "2006-01-02" . }}">
-				{{ time.Format "02-01-2006" . }}
-			</time>
-		</p>
-		{{ end }}
+	{{ with .Title }}
+	<h1 aria-label="article title" id="article-title">{{ . }}</h1>
+	{{ end }}
+	{{ with .Date }}
+	<p aria-label="published on">
+		<time datetime="{{ time.Format "2006-01-02" . }}">
+			{{ time.Format "02-01-2006" . }}
+		</time>
+	</p>
+	{{ end }}
 	{{ .Content }}
 {{ end }}
