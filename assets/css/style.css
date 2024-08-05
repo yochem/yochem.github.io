@@ -36,6 +36,7 @@ header, main, footer {
 main {
 	min-width: 300px;
 	flex: 1;
+	width: 100%;
 }
 
 @media screen and (max-width: 440px) {
