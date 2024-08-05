@@ -1,14 +1,14 @@
 ---
-title: "Presenting paper @ BNAIC/BeNeLearn conference"
+title: "Presenting paper at BNAIC/BeNeLearn conference"
 date: 2022-11-21
-draft: true
+draft: false
 ---
 
-Just a small post about presenting a study at a conference. First I tell the
-story of how we got to present it, and after that an abstract of the paper. The
-paper is currently online on the website of the conference:
-[bnaic2022](https://bnaic2022.uantwerpen.be/wp-content/uploads/BNAICBeNeLearn_2022_submission_4430.pdf),
-but also on [arXiv](https://arxiv.org/abs/2211.11512).
+During my Master's AI, a group paper assignment was turned into a paper
+presentation at the AI conference of Belgium, The Netherlands and Luxembourg
+(BNAIC). The paper can be found on [their
+website](https://bnaic2022.uantwerpen.be/wp-content/uploads/BNAICBeNeLearn_2022_submission_4430.pdf)
+and on [arXiv](https://arxiv.org/abs/2211.11512).
 
 ## How we got to present our paper
 
