@@ -47,7 +47,7 @@ main {
 footer {
 	width: 100%;
 	margin-top: 0;
-	margin-bottom: 3em;
+	margin-bottom: calc(3em + env(safe-area-inset-bottom));
 	& nav {
 		display: grid;
 		grid-template-columns: 1fr repeat(20, auto);
