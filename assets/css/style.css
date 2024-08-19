@@ -26,9 +26,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	min-height: 100svh;
 }
 
-header, main, footer {
+header,
+main,
+footer {
 	margin: 30px auto;
 	max-width: 55ch;
 }
@@ -39,16 +42,11 @@ main {
 	width: 100%;
 }
 
-@media screen and (max-width: 440px) {
-	header, main, footer {
-		max-width: 90%;
-	}
-}
-
 footer {
 	width: 100%;
 	margin-top: 0;
-	margin-bottom: calc(3em + env(safe-area-inset-bottom));
+	margin-bottom: 3em;
+
 	& nav {
 		display: grid;
 		grid-template-columns: 1fr repeat(20, auto);
@@ -81,6 +79,19 @@ footer {
 
 }
 
+@media screen and (max-width: 440px) {
+
+	header,
+	main,
+	footer {
+		max-width: 90%;
+	}
+
+	footer {
+		margin-bottom: 1em;
+	}
+}
+
 hr {
 	border-color: var(--bg-color);
 }
@@ -104,7 +115,9 @@ h1 a {
 	text-decoration: none;
 }
 
-ol, ul, p {
+ol,
+ul,
+p {
 	margin-top: 0;
 	margin-bottom: 1em;
 }
@@ -121,11 +134,17 @@ ol {
 	list-style-position: outside;
 }
 
-ul ul, ol ol {
+ul ul,
+ol ol {
 	margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-size: inherit;
 	font-weight: bold;
 	margin-bottom: 0.1em;
@@ -141,7 +160,7 @@ h3 {
 
 time {
 	color: var(--detail-color);
-	font-style:	italic;
+	font-style: italic;
 }
 
 code {
@@ -153,7 +172,8 @@ code {
 	overflow-x: auto;
 }
 
-:not(pre) > code::before, :not(pre) > code::after {
+:not(pre)>code::before,
+:not(pre)>code::after {
 	content: '`';
 	color: var(--detail-color);
 }
@@ -182,9 +202,11 @@ blockquote {
 		--code-color: black;
 		--detail-color: black;
 	}
+
 	body {
 		font-size: 10pt;
 	}
+
 	nav {
 		display: none;
 	}
