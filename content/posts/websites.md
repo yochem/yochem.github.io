@@ -13,4 +13,4 @@ of (or dependence on) JavaScript as much as possible.
 - [jorddijkstra.github.io](https://jorddijkstra.github.io)
 - [yochem.nl/weektaak](https://yochem.nl/weektaak/)
 - [abelvanoosterwijk.com](https://abelvanoosterwijk.com)
-- [blaaskaak.nl](https://blaaskaak.nl)
+- [blaaskaak.nl](https://blaaskaak.nl) (WIP)
