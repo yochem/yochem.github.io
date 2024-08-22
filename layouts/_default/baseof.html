@@ -17,9 +17,11 @@
 	{{- if .Params.noindex -}}
 	<meta name="robots" content="noindex" />
 	{{- end -}}
-	<link rel="stylesheet" href="{{ (resources.Get "css/style.css").RelPermalink }}">
+	{{ $css := resources.Get "style.css" }}
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<script src="{{ (resources.Get "js/nav-current-page.js").RelPermalink }}" defer></script>
+	{{ $js := resources.Get "nav-current-page.js" }}
+	<script src="{{ $js.RelPermalink }}" defer></script>
 </head>
 
 <body>
