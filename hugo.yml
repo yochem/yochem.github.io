@@ -1,0 +1,27 @@
+baseURL: 'https://yochem.nl'
+title: Yochem
+
+disableKinds:
+  - taxonomy
+  - term
+
+markup:
+  goldmark:
+    extensions:
+      strikethrough: true
+      footnotes: true
+
+menus:
+  footer:
+  - name: Home
+    pageRef: /
+    weight: 1
+  - name: Blog
+    pageRef: /posts
+    weight: 2
+  - name: Now
+    pageRef: /now
+    weight: 3
+  - name: Contact
+    pageRef: /contact
+    weight: 4

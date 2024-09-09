@@ -1,7 +1,0 @@
-baseURL = 'https://yochem.nl'
-title = 'Yochem'
-disableKinds = ['taxonomy', 'term']
-
-[markup.goldmark.extensions]
-	strikethrough = true
-	footnotes = true
