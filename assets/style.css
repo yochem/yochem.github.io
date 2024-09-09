@@ -53,14 +53,6 @@ footer {
 
 		& a {
 
-			&.current {
-				color: var(--detail-color);
-			}
-
-			&:first-child {
-				justify-self: left;
-			}
-
 			&:first-child {
 				justify-self: left;
 			}
@@ -107,7 +99,8 @@ a:visited {
 	text-decoration-thickness: 4%;
 }
 
-a:hover {
+a:hover,
+a[aria-current] {
 	color: var(--detail-color);
 }
 

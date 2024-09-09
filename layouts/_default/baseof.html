@@ -20,13 +20,11 @@
 	{{ $css := resources.Get "style.css" }}
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	{{ $js := resources.Get "nav-current-page.js" }}
-	<script src="{{ $js.RelPermalink }}" defer></script>
 </head>
 
 <body>
 	<header>
-		<h1 aria-label="website title" lang="nl" translate="no">
+		<h1 {{ if (eq .Page.RelPermalink "/") -}}aria-current="page"{{- end }} aria-label="website title" lang="nl" translate="no">
 			<a title="Back home" aria-label="homepage" href="/">
 				Yochem van Rosmalen
 			</a>
@@ -34,15 +32,18 @@
 	</header>
 
 	<main>
-	{{- block "content" . }}{{- end }}
+	{{- block "content" . -}}
+	{{- end -}}
 	</main>
 	<footer>
 		<hr>
 		<nav>
-			<a aria-label="Back home" href="/">/home</a>
-			<a aria-label="Blogs list" href="/posts/">/blog</a>
-			<a aria-label="Now page" href="/now/">/now</a>
-			<a aria-label="Contact page" href="/contact/">/contact</a>
+			{{- $currentPageURL := .Page.RelPermalink -}}
+			{{ range site.Menus.footer }}
+			<a {{ if (eq $currentPageURL .URL) -}}aria-current="page"{{- end }} aria-label="{{ .Name }} page" href="{{ .URL }}">
+				/{{ lower .Name }}
+			</a>
+			{{- end }}
 		</nav>
 	</footer>
 </body>
