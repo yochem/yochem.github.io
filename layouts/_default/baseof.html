@@ -24,8 +24,8 @@
 
 <body>
 	<header>
-		<h1 aria-label="website title" lang="nl" translate="no">
-			<a title="Back home" {{ if .IsHome -}}aria-current="page"{{- end }} aria-label="homepage" href="/">
+		<h1 lang="nl" translate="no">
+			<a title="Back home" {{ if .IsHome -}}aria-current="page"{{- end }} aria-label="Home" href="/">
 				Yochem van Rosmalen
 			</a>
 		</h1>
@@ -40,7 +40,7 @@
 		<nav>
 			{{- $currentPageURL := page.RelPermalink -}}
 			{{ range site.Menus.footer }}
-			<a {{ if (eq $currentPageURL .URL) -}}aria-current="page"{{- end }} aria-label="{{ .Name }} page" href="{{ .URL }}">
+			<a {{ if (eq $currentPageURL .URL) -}}aria-current="page"{{- end }} href="{{ .URL }}">
 				/{{ lower .Name }}
 			</a>
 			{{- end }}
