@@ -24,8 +24,8 @@
 
 <body>
 	<header>
-		<h1 {{ if (eq .Page.RelPermalink "/") -}}aria-current="page"{{- end }} aria-label="website title" lang="nl" translate="no">
-			<a title="Back home" aria-label="homepage" href="/">
+		<h1 aria-label="website title" lang="nl" translate="no">
+			<a title="Back home" {{ if .IsHome -}}aria-current="page"{{- end }} aria-label="homepage" href="/">
 				Yochem van Rosmalen
 			</a>
 		</h1>
