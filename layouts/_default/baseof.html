@@ -3,7 +3,7 @@
 <html lang="{{ default "en" .Params.Language }}" dir="ltr">
 
 <head>
-	<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+	<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<meta name="description" content="Yochem van Rosmalen personal website">
@@ -12,7 +12,7 @@
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@yoch3m" />
 	<meta name="twitter:creator" content="@yoch3m" />
-	<meta name="twitter:title" content="{{ .Site.Title }}" />
+	<meta name="twitter:title" content="{{ site.Title }}" />
 	<meta name="twitter:description" content="Dutch AI student" />
 	{{- if .Params.noindex -}}
 	<meta name="robots" content="noindex" />
@@ -38,7 +38,7 @@
 	<footer>
 		<hr>
 		<nav>
-			{{- $currentPageURL := .Page.RelPermalink -}}
+			{{- $currentPageURL := page.RelPermalink -}}
 			{{ range site.Menus.footer }}
 			<a {{ if (eq $currentPageURL .URL) -}}aria-current="page"{{- end }} aria-label="{{ .Name }} page" href="{{ .URL }}">
 				/{{ lower .Name }}

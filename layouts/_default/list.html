@@ -4,7 +4,7 @@
 {{ .Content }}
 
 <ul>
-{{ range (where .Site.RegularPages "Section" .Section) }}
+{{ range (where site.RegularPages "Section" .Section) }}
 	{{ if not .Params.Unlisted }}
 	<li style="line-height: 2">
 		<a href='{{ .RelPermalink }}'>
