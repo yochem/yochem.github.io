@@ -104,8 +104,10 @@ a[aria-current] {
 	color: var(--detail-color);
 }
 
-h1 a {
+h1 a,
+h1 a[aria-current] {
 	text-decoration: none;
+	color: inherit;
 }
 
 ol,

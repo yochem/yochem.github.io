@@ -3,7 +3,7 @@
 <html lang="{{ default "en" .Params.Language }}" dir="ltr">
 
 <head>
-	<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+	<title>{{ with .Title }}{{ . }} | {{ end }}{{ site.Title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<meta name="description" content="Yochem van Rosmalen personal website">
