@@ -5,11 +5,18 @@ disableKinds:
   - taxonomy
   - term
 
+languageCode: en-US
+
 markup:
   goldmark:
     extensions:
       strikethrough: true
       footnotes: true
+
+params:
+  description: Yochem's personal website and blog
+  social:
+    twitter: yoch3m
 
 menus:
   footer:

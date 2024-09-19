@@ -1,5 +1,5 @@
 ---
-language: nl
+locale: nl-NL
 date: 2024-07-08
 title: Carnaval datum in je online agenda!
 unlisted: true

@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 
-<html lang="{{ default "en" .Params.Language }}" dir="ltr">
+<html lang="{{ or .Params.locale site.Language.LanguageCode }}" dir="ltr">
 
 <head>
-	<title>{{ with .Title }}{{ . }} | {{ end }}{{ site.Title }}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<meta name="description" content="Yochem van Rosmalen personal website">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ with .Title }}{{ . }} | {{ end }}{{ site.Title }}</title>
+
 	<meta name="theme-color" content="#1b1b1b" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="lightgrey" media="(prefers-color-scheme: light)">
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@yoch3m" />
-	<meta name="twitter:creator" content="@yoch3m" />
-	<meta name="twitter:title" content="{{ site.Title }}" />
-	<meta name="twitter:description" content="Dutch AI student" />
+
+	<meta name="description" content="{{ site.Params.description }}">
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+
 	{{- if .Params.noindex -}}
 	<meta name="robots" content="noindex" />
 	{{- end -}}
-	{{ $css := resources.Get "style.css" }}
-	<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+	{{ with resources.Get "style.css" }}
+	<link rel="stylesheet" href="{{ .RelPermalink }}">
+	{{ end }}
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
