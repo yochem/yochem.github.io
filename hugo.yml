@@ -1,4 +1,4 @@
-baseURL: 'https://yochem.nl'
+baseURL: https://yochem.nl/
 title: Yochem
 
 disableKinds:
