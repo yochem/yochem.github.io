@@ -1,4 +1,6 @@
-Hi 👋! I'm Yochem. A Dutch student, currently working on my Master's thesis in
+## Hey! 👋🏼
+
+I'm Yochem. A Dutch student, currently working on my Master's thesis in
 artificial intelligence at [Utrecht University](https://uu.nl).
 
 ## Connect with me

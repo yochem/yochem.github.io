@@ -155,6 +155,10 @@ h2 {
 		fill: var(--fg-color);
 		margin-right: 0.5em;
 	}
+
+	&:first-of-type {
+		margin-top: 0;
+	}
 }
 
 h3 {
@@ -210,7 +214,7 @@ blockquote {
 		font-size: 10pt;
 	}
 
-	nav {
+	footer {
 		display: none;
 	}
 }
