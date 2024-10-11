@@ -1,0 +1,4 @@
+User-agent: *
+{{- range where .Pages "Params.noindex" true }}
+Disallow: {{ .RelPermalink -}}
+{{ end }}
