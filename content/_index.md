@@ -1,3 +1,6 @@
+---
+summary: false
+---
 ## Hey! 👋🏼
 
 I'm Yochem. A Dutch student, currently working on my Master's thesis in
