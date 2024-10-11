@@ -21,7 +21,9 @@
 	{{ with resources.Get "style.css" }}
 	<link rel="stylesheet" href="{{ .RelPermalink }}">
 	{{ end }}
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	{{ with resources.Get "favicon.ico" }}
+	<link rel="icon" href="{{ .RelPermalink }}">
+	{{ end }}
 </head>
 
 <body>
