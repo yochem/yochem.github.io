@@ -14,16 +14,10 @@
 	{{ template "_internal/opengraph.html" . }}
 	{{ template "_internal/twitter_cards.html" . }}
 
-	{{- if .Params.noindex -}}
-	<meta name="robots" content="noindex" />
-	{{- end -}}
+	{{ if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
 
-	{{ with resources.Get "style.css" }}
-	<link rel="stylesheet" href="{{ .RelPermalink }}">
-	{{ end }}
-	{{ with resources.Get "favicon.ico" }}
-	<link rel="icon" href="{{ .RelPermalink }}">
-	{{ end }}
+	{{ with resources.Get "style.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+	{{ with resources.Get "favicon.ico" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}
 </head>
 
 <body>
@@ -50,5 +44,10 @@
 			{{- end }}
 		</nav>
 	</footer>
+
+	{{ with resources.Get "instantclick.min.js" }}
+	<script src="{{ .RelPermalink }}" data-no-instant></script>
+	<script data-no-instant>InstantClick.init();</script>
+	{{ end }}
 </body>
 </html>
