@@ -33,3 +33,7 @@ menus:
   - name: Contact
     pageRef: /contact
     weight: 4
+
+module:
+  imports:
+  - path: github.com/gohugoio/hugo-mod-jslibs/instantpage
