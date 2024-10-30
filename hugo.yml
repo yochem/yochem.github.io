@@ -15,10 +15,11 @@ markup:
       footnotes: true
 
 params:
-  description: Yochem's personal website and blog
+  description: AI student from the Netherlands
   social:
     twitter: yoch3m
 
+summaryLength: 0
 menus:
   footer:
   - name: Home
