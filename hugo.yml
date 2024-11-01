@@ -37,4 +37,4 @@ menus:
 
 module:
   imports:
-  - path: github.com/gohugoio/hugo-mod-jslibs/instantpage
+  - path: github.com/gohugoio/hugo-mod-jslibs/instantclick
