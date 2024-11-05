@@ -41,6 +41,8 @@ And now, I can't use Vim without this remap. It's even in my [minimal
 config](https://gist.github.com/yochem/69babc7f634d0ee4bfbeca771e3f9366#file-comfy-vim-L22-L23
 "GitHub Gist with my minimal Vim configuration").
 
+## Lua version
+
 And for the NeoVim users that are also lua-config-purists like me:
 ```
 map("n", "oo", function()
@@ -55,3 +57,11 @@ map("n", "OO", function()
 	vim.api.nvim_buf_set_lines(0, line - 1, line - 1, true, repeated)
 end, {})
 ```
+
+## Update!
+
+My [PR](https://github.com/neovim/neovim/pull/30984) adding this into Nvim core
+has now been merged! This means that adding empty lines above/below current
+line in normal mode is available as of Nvim v0.12. The default keymaps are
+`[<Space>` and `]<Space>`, based on tpope's famous
+[unimpaired](https://github.com/tpope/vim-unimpaired) package.
