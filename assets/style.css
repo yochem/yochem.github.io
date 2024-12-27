@@ -32,7 +32,7 @@ body {
 header,
 main,
 footer {
-	margin: 30px auto;
+	margin: 1em auto;
 	max-width: 55ch;
 }
 
@@ -171,22 +171,26 @@ time {
 }
 
 code {
-	font: inherit;
-	color: var(--code-color);
+	font-size: 0.9rem;
+	font-family: monospace;
 	tab-size: 4;
-	max-width: 73vw;
-	display: inline-flex;
-	overflow-x: auto;
-}
 
-:not(pre)>code::before,
-:not(pre)>code::after {
-	content: '`';
-	color: var(--detail-color);
+	p & {
+		text-decoration: inherit;
+		text-decoration-color: var(--code-color);
+		color: var(--code-color);
+
+		/* &::before, */
+		/* &::after { */
+		/* 	content: '`'; */
+		/* 	color: var(--detail-color); */
+		/* } */
+	}
 }
 
 pre {
-	font-size: 0.9rem;
+	max-width: 73vw;
+	overflow-x: auto;
 	margin-left: 4ch;
 	background-color: transparent !important;
 }
