@@ -44,5 +44,5 @@ return {
 
 Tada! Thanks to the great work by the authors, this now provides syntax
 highlighting for the Ghostty config file. Bonus points:
-[<C-x><C-o>](https://neovim.io/doc/user/insert.html#i_CTRL-X_CTRL-O) completes
-the Ghostty options!
+[`<C-x><C-o>`](https://neovim.io/doc/user/insert.html#i_CTRL-X_CTRL-O)
+completes the Ghostty options!
