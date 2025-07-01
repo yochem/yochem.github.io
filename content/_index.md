@@ -2,8 +2,8 @@
 ---
 ## Hey! 👋🏼
 
-I'm Yochem. A Dutch student, currently working on my Master's thesis in
-artificial intelligence at [Utrecht University](https://uu.nl).
+I'm Yochem. I just graduated with a Master's in AI. I like to work on open
+source projects, especially contributing to [Neovim](https://neovim.io).
 
 ## Connect with me
 - [GitHub](https://github.com/yochem)

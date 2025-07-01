@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date: 2024-07-24
-draft: false
+draft: true
 ---
 
 Most of my projects can be found on my [GitHub](https://github.com/yochem)

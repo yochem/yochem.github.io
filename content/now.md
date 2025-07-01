@@ -1,13 +1,11 @@
 ---
 title: "Now"
-date: 2024-07-24
+date: 2025-07-01
 ---
 
-Currently, I'm doing my Master's thesis in AI at the Utrecht University, and
-interning at [Q42](https://q42.nl "website of my intern company"). I plan to
-finish it at the start of next year.
-
-I'm still living in Amsterdam, and plan to keep doing so.
+I've just completed my Master's in Artificial Intelligence! Finally I can call
+myself an alumnus of Utrecht University and University of Amsterdam. Right now,
+I'm taking some time of and starting to look for a job near Amsterdam.
 
 ## What is this?
 
