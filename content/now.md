@@ -5,7 +5,7 @@ date: 2025-07-01
 
 I've just completed my Master's in Artificial Intelligence! Finally I can call
 myself an alumnus of Utrecht University and University of Amsterdam. Right now,
-I'm taking some time of and starting to look for a job near Amsterdam.
+I'm taking some time off and starting to look for a job near Amsterdam.
 
 ## What is this?
 
