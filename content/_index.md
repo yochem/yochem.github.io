@@ -2,13 +2,13 @@
 ---
 ## Hey! 👋🏼
 
-I'm Yochem. I just graduated with a Master's in AI. I like to work on open
+I'm Yochem. I recently graduated from my Master's in AI. I like to work on open
 source projects, especially contributing to [Neovim](https://neovim.io).
 
 ## Connect with me
 - [GitHub](https://github.com/yochem)
 - [Mail](mailto:hi@yochem.nl?subject=Hi!)
-- [Twitter (x.com)](https://x.com/yoch3m)
+- [Twitter (X.com)](https://x.com/yoch3m)
 
 More ways to contact me can be found on the [contact](/contact/ "Contact page") page.
 
