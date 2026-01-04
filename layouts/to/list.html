@@ -1,0 +1,17 @@
+{{ define "content" }}
+<h2>Useful links across the web</h2>
+
+{{ .Content }}
+
+<ul>
+{{ range (where site.RegularPages "Section" .Section) }}
+	{{ if not .Params.Unlisted }}
+	<li style="line-height: 2;">
+		<a href='{{ .Params.to }}'>
+			{{ .Title | markdownify }} ({{ .Params.to }})
+		</a>
+	</li>
+	{{ end }}
+{{ end }}
+</ul>
+{{ end }}

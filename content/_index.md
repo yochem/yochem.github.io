@@ -2,7 +2,7 @@
 ---
 ## Hey! 👋🏼
 
-I'm Yochem. I recently graduated from my Master's in AI. I like to work on open
+I'm Yochem. I recently graduated from my Master's in AI. I like working on open
 source projects, especially contributing to [Neovim](https://neovim.io).
 
 ## Connect with me

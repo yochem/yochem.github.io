@@ -10,7 +10,7 @@ whatever! Happy to answer :)
 [hey@yochem.nl](mailto:hey@yochem.nl?subject=Hey!)
 
 ## {{< logo-signal >}} Signal
-[yochem.40](https://signal.me/#eu/hoWuQizIlEpVNQ_HBpTu4a6eJF2O1E1aiz6uvBIoJPV53JCKdDlOwJ3nGN3QLGuM)
+[yochem.42](https://signal.me/#eu/jLS5HyfGii21bvgm9WgAQCggHFenz-86W8p4ek-7s71GHDu1tW5CaoMmBaXYiq4f)
 
 ## {{< logo-bluesky >}} Bluesky
 [@yochem.nl](https://bsky.app/profile/yochem.nl)
