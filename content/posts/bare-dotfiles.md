@@ -1,6 +1,6 @@
 ---
 title: 'Bare Dotfiles Repository: how to do "sparse checkouts"'
-draft: true
+draft: false
 date: 2026-02-03
 ---
 
