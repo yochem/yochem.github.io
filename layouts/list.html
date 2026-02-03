@@ -1,17 +1,5 @@
 {{ define "content" }}
 <h2>{{ title .Section }}</h2>
-
 {{ .Content }}
-
-<ul>
-{{ range (where site.RegularPages "Section" .Section) }}
-	{{ if not .Params.Unlisted }}
-	<li style="line-height: 2">
-		<a href='{{ .RelPermalink }}'>
-			{{ .Title | markdownify }} (<time datetime="{{ time.Format "2006-01-02" .Date }}">{{ time.Format "2006-01-02" .Date }}</time>)
-		</a>
-	</li>
-	{{ end }}
-{{ end }}
-</ul>
+{{ partial "section-list.html" (dict "section" .Section) }}
 {{ end }}

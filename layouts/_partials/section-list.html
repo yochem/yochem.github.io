@@ -1,0 +1,19 @@
+{{ $section := .section }}
+{{ $limit := .limit | default 0 }}
+
+{{ $pages := where site.RegularPages "Section" $section }}
+
+{{ if gt $limit 0 }}
+	{{ $pages = first $limit $pages }}
+{{ end }}
+<ul>
+{{ range $pages }}
+	{{ if not .Params.Unlisted }}
+	<li style="line-height: 2">
+		<a href='{{ .RelPermalink }}'>
+			{{ .Title | markdownify }} (<time datetime="{{ time.Format "2006-01-02" .Date }}">{{ time.Format "2006-01-02" .Date }}</time>)
+		</a>
+	</li>
+	{{ end }}
+{{ end }}
+</ul>

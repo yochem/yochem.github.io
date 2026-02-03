@@ -13,4 +13,8 @@ source projects, especially contributing to [Neovim](https://neovim.io).
 More ways to contact me can be found on the [contact](/contact/ "Contact page") page.
 
 ## Blog
-I occasionally post something on my [blog](/posts/ "My Blog").
+I occasionally post something on my blog. Here are the 5 latest posts:
+
+{{< section-list "posts" 5 >}}
+
+See the [full list here](/posts/).
