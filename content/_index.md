@@ -7,7 +7,7 @@ source projects, especially contributing to [Neovim](https://neovim.io).
 
 ## Connect with me
 - [GitHub](https://github.com/yochem)
-- [Mail](mailto:hi@yochem.nl?subject=Hi!)
+- Mail: `hey @ <this website domain>`
 - [Twitter (X.com)](https://x.com/yoch3m)
 
 More ways to contact me can be found on the [contact](/contact/ "Contact page") page.
