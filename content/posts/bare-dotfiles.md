@@ -1,5 +1,5 @@
 ---
-title: 'Bare Dotfiles Repository: how to do "sparse checkouts"'
+title: 'Bare Dotfiles: how to do "sparse checkouts" on Different Machines'
 draft: false
 date: 2026-02-03
 ---
@@ -13,7 +13,7 @@ definitely read the short tutorial if you haven't, but it basically advices you
 to create a bare repository and a shell alias to reference that repository:
 
 ```bash
-$ git clone --bare <repo_url> ~/Documents/dotfiles
+$ git clone --bare "<repo_url>" ~/Documents/dotfiles
 $ alias dot='git --git-dir="$HOME/Documents/dotfiles" --work-tree="$XDG_CONFIG_HOME"'
 ```
 
@@ -34,19 +34,21 @@ config folder) is not touched yet. If we would continue the examples from the
 blog post, we would checkout the main branch with `dot checkout` which would
 possibly fail with the message that files could be overwritten.
 
-To solve this problem, I recommend to create a new [orphan branch][orphan] and
-manually checking out the configs you need on this specific machine. For
-example, to only use my Neovim config on this machine:
-
+To solve this problem, I recommend to create a new [orphan branch][orphan]:
 
 ```bash
-$ dot switch --orphan $(hostname)
+$ dot switch --orphan "$(hostname)"
+```
+
+Now we have a branch with no parent (hence _orphan_) and gave it the name of
+the machine. Now, we can manually checkout configs we would like to use on this
+machine. If I for example only want to use my Neovim config on this machine:
+
+```bash
 $ dot restore -s main -- nvim
 ```
 
-The `--orphan` flag is optional, but it prevents that the first commit to the
-new branch is a "I deleted almost everything except these configs" commit.
-
+Note: this is the same as `dot checkout main -- nvim`.
 
 ## Bonus: Ignore Local Config
 
@@ -56,8 +58,14 @@ really want to ignore them, I add them to Git's local ignore file
 `$GIT_DIR/info/exclude`. Here's a Git alias I use for it:
 
 ```bash
-$ config config alias.exclude "!echo "${1?no argument}" >> $(git rev-parse --git-path info/exclude) && :"
-$ config exclude htop
+$ dot config alias.exclude \
+	'!echo "${1?no argument}" >> $(git rev-parse --git-path info/exclude) && :'
+```
+
+Which allows me to ignore a single config:
+
+```bash
+$ dot exclude htop
 ```
 
 [bare]: https://git-scm.com/docs/git-clone.html#Documentation/git-clone.txt---bare
