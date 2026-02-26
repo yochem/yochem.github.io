@@ -13,6 +13,8 @@ markup:
     extensions:
       strikethrough: true
       footnotes: true
+  highlight:
+    style: nord
 
 params:
   description: AI student from the Netherlands
