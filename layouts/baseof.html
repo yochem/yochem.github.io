@@ -6,26 +6,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ with .Title }}{{ . }} | {{ end }}{{ site.Title }}</title>
-
 	<meta name="theme-color" content="#1b1b1b" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="lightgrey" media="(prefers-color-scheme: light)">
-
 	<meta name="description" content="{{ site.Params.description }}">
 	{{ template "_internal/opengraph.html" . }}
 	{{ template "_internal/twitter_cards.html" . }}
 
-	{{ if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
+	{{ if .Params.noindex -}}
+	<meta name="robots" content="noindex">
+	{{- end }}
 
-	{{ with resources.Get "style.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
-	{{ with resources.Get "favicon.ico" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}
+	{{ with resources.Get "style.css" | minify | fingerprint -}}
+	<link rel="stylesheet" href="{{ .RelPermalink }}">
+	{{- end }}
+	{{ with resources.Get "favicon.ico" | fingerprint -}}
+	<link rel="icon" href="{{ .RelPermalink }}">
+	{{- end }}
 </head>
 
 <body>
 	<header>
 		<h1 lang="nl" translate="no">
-			<a title="Back home" {{ if .IsHome -}}aria-current="page"{{- end }} aria-label="Home" href="/">
-				yochem.nl
-			</a>
+			<a
+				title="Back home"
+				{{ if .IsHome -}}aria-current="page"{{- end }}
+				aria-label="Home"
+				href="/"
+			>yochem.nl</a>
 		</h1>
 	</header>
 
