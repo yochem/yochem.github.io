@@ -14,6 +14,24 @@
 	}
 }
 
+@media (prefers-contrast: more) {
+	:root {
+		--bg-color: #ffffff;
+		--fg-color: #000000;
+		--code-color: #1a4d00;
+		--detail-color: #444444;
+	}
+}
+
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+	:root {
+		--bg-color: #000000;
+		--fg-color: #ffffff;
+		--code-color: #b8ff6e;
+		--detail-color: #cccccc;
+	}
+}
+
 body {
 	color: var(--fg-color);
 	background-color: var(--bg-color);
