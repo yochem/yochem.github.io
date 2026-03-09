@@ -44,11 +44,11 @@
 	<footer>
 		<hr>
 		<nav>
-			{{- $currentPageURL := page.RelPermalink -}}
 			{{ range site.Menus.footer }}
-			<a {{ if (eq $currentPageURL .URL) -}}aria-current="page"{{- end }} href="{{ .URL }}">
-				/{{ lower .Name }}
-			</a>
+			<a
+				{{ if (eq $.RelPermalink .URL) -}}aria-current="page"{{- end }}
+				href="{{ .URL }}"
+			>{{ lower .Name }}</a>
 			{{- end }}
 		</nav>
 	</footer>

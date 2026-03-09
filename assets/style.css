@@ -57,27 +57,19 @@ footer {
 	margin-bottom: 3em;
 
 	& nav {
-		display: grid;
-		grid-template-columns: 1fr repeat(20, auto);
+		display: flex;
+		gap: 20px;
 
 		& a {
-
-			&:first-child {
-				justify-self: left;
+			&::before {
+				content: '/';
 			}
 
-			&:not(:first-child) {
-				justify-self: right;
-				padding-left: 10px;
-			}
-
-			&:not(:first-child):not(:last-child) {
-				padding-right: 10px;
+			&:nth-child(2) {
+				margin-left: auto;
 			}
 		}
-
 	}
-
 }
 
 @media screen and (max-width: 440px) {
