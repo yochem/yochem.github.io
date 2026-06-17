@@ -22,6 +22,18 @@ params:
     twitter: yoch3m
 
 summaryLength: 0
+
+outputs:
+  home:
+    - html
+    - markdown
+  section:
+    - html
+    - markdown
+  page:
+    - html
+    - markdown
+
 menus:
   footer:
   - name: Home
